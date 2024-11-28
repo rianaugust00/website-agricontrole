@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    color: #38692E;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 160px;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #38692E;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ebf08c;
+}
+
+/* Estilo do botão de Login */
+.login-link {
+    background-color: #38692E; /* Fundo verde */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-link:hover {
+    background-color: #2a4c21; /* Tom mais escuro quando passa o mouse */
+    transform: scale(1.05); /* Efeito de aumentar o botão ao passar o mouse */
+}
+
+/* Seção com imagem de fundo */
+.seção-imagem {
+    height: 386px; /* Define a altura da seção */
+    background-image: url('https://s3-alpha-sig.figma.com/img/2f54/3be5/027fe67e992b2ed75fae634414dbaf55?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iVSl2LCy~nvhP9kWp11j6iAxyASHbMEe-ycLbLILymT03t~zeXUocy-M7Dt0aozhmeEr8eVbNxGrcriOL7O8GK4EkSpklQp23AJA4jvs-MmkSrAiVxoJMTo3H7bsnpw4FQCo0N66vk40jdwIxGz~0nfau4LvF53btefIynuz0uwx4H7HY97jXjsajYXEAyqhsuP9lm4grHRh2JNAm-1SNdFeSQsnAQeFxEzAyjNVxQFInxt8zM-~0XgW4FIav2fpMhLnrhZfVI4IDU1JdORPakpGwS5AkpE9QCPyOCNQ1wh6JlgHJ~g~jUmVQz1o5mqorgx2wfzIhmU2UxXW84PFCw__');
+    background-size: cover; /* A imagem vai cobrir toda a área da seção */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* A imagem não será repetida */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo dentro da seção */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    color: #ffffff; /* Cor do texto dentro da seção */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.seção-imagem h2 {
+    font-size: 36px; /* Tamanho do texto */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para melhorar a visibilidade */
+}
+
+/* Estilo da seção equipe */
+.seção-equipe {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.seção-equipe h1 {
+    font-family: 'Nunito', sans-serif; /* Aplica a fonte Nunito */
+    font-size: 32px;
+    color: #38692E;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}

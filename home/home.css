@@ -64,7 +64,7 @@ nav ul li a:hover {
 .login-link {
     background-color: #38692E; /* Fundo verde */
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 4px;
     font-weight: bold;
     text-decoration: none;
@@ -78,22 +78,37 @@ nav ul li a:hover {
 
 /* Seção com imagem de fundo */
 .seção-imagem {
-    height: 386px; /* Define a altura da seção */
-    background-image: url('https://s3-alpha-sig.figma.com/img/2f54/3be5/027fe67e992b2ed75fae634414dbaf55?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iVSl2LCy~nvhP9kWp11j6iAxyASHbMEe-ycLbLILymT03t~zeXUocy-M7Dt0aozhmeEr8eVbNxGrcriOL7O8GK4EkSpklQp23AJA4jvs-MmkSrAiVxoJMTo3H7bsnpw4FQCo0N66vk40jdwIxGz~0nfau4LvF53btefIynuz0uwx4H7HY97jXjsajYXEAyqhsuP9lm4grHRh2JNAm-1SNdFeSQsnAQeFxEzAyjNVxQFInxt8zM-~0XgW4FIav2fpMhLnrhZfVI4IDU1JdORPakpGwS5AkpE9QCPyOCNQ1wh6JlgHJ~g~jUmVQz1o5mqorgx2wfzIhmU2UxXW84PFCw__');
-    background-size: cover; /* A imagem vai cobrir toda a área da seção */
-    background-position: center; /* Centraliza a imagem de fundo */
-    background-repeat: no-repeat; /* A imagem não será repetida */
+    height: 450px;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), /* Sobreposição escura */
+        url('https://s3-alpha-sig.figma.com/img/2f54/3be5/027fe67e992b2ed75fae634414dbaf55?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iVSl2LCy~nvhP9kWp11j6iAxyASHbMEe-ycLbLILymT03t~zeXUocy-M7Dt0aozhmeEr8eVbNxGrcriOL7O8GK4EkSpklQp23AJA4jvs-MmkSrAiVxoJMTo3H7bsnpw4FQCo0N66vk40jdwIxGz~0nfau4LvF53btefIynuz0uwx4H7HY97jXjsajYXEAyqhsuP9lm4grHRh2JNAm-1SNdFeSQsnAQeFxEzAyjNVxQFInxt8zM-~0XgW4FIav2fpMhLnrhZfVI4IDU1JdORPakpGwS5AkpE9QCPyOCNQ1wh6JlgHJ~g~jUmVQz1o5mqorgx2wfzIhmU2UxXW84PFCw__');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo dentro da seção */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    color: #ffffff; /* Cor do texto dentro da seção */
-    text-align: center; /* Alinha o texto ao centro */
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
 }
+
 
 .seção-imagem h2 {
     font-size: 36px; /* Tamanho do texto */
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para melhorar a visibilidade */
+}   
+
+.seção-imagem p {
+    font-size: 18px; /* Define o tamanho do texto */
+    margin-top: 10px; /* Espaçamento entre o parágrafo e o título */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1); /* Sombra no texto */
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+    max-width: 1000px; /* Limita a largura do parágrafo para evitar linhas muito longas */
+}
+
+.seção-imagem {
+    flex-direction: column; /* Organiza os elementos verticalmente */
 }
 
 /* Estilo da seção equipe */
@@ -109,4 +124,75 @@ nav ul li a:hover {
     color: #38692E;
     margin-bottom: 20px;
     text-transform: uppercase;
+}
+
+.seção-equipe h2{
+    font-family: 'Nunito', sans-serif; /* Aplica a fonte Nunito */
+    font-size: 24px;
+    color: #38692E;
+    margin-bottom: 20px;
+    padding: 30px 100px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.seção-equipe {
+    width: 1168.26px;
+    height: 2027.79px;
+    border-radius: 15px 15px 15px 15px;
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+    border-color: #efefef; /* Cor do borda, ajuste conforme necessário */
+    gap: 0px; /* Pode ser útil para controle de espaçamento interno */
+    opacity: 1; /* Certifique-se que não é 0 para ser visível */
+    background-color: #f3f3f3; /* Fundo da seção */
+    margin: auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.equipe-membros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os orientadores */
+    gap: 20px; /* Espaçamento uniforme entre os membros */
+}
+
+.orientador {
+    text-align: center;
+    margin: 10px; /* Reduz as margens para melhor distribuição */
+    max-width: 300px; /* Ajuste para que todas as descrições fiquem consistentes */
+    flex: 1 1 calc(33.33% - 40px); /* Permite 3 orientadores por linha com espaçamento */
+}
+
+.orientador img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.orientador p {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+    text-align: justify; /* Alinha descrição dos orientadores de forma justificada */
+}
+
+.orientador p strong {
+    font-size: 1.2em;
+    color: #000;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .orientador {
+        flex: 1 1 calc(50% - 20px); /* Mostra 2 por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .orientador {
+        flex: 1 1 100%; /* Um por linha em telas pequenas */
+    }
 }

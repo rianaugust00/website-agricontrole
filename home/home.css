@@ -1,3 +1,8 @@
+/* cores :
+rgba(56, 105, 46, 1)
+
+*/
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -50,7 +55,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #38692E;
+    color: rgba(56, 105, 46, 1);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -112,6 +117,7 @@ nav ul li a:hover {
 }
 
 /* Estilo da seção equipe */
+
 .seção-equipe {
     background-color: #f9f9f9;
     padding: 50px 20px;
@@ -121,19 +127,22 @@ nav ul li a:hover {
 .seção-equipe h1 {
     font-family: 'Nunito', sans-serif; /* Aplica a fonte Nunito */
     font-size: 32px;
-    color: #38692E;
+    color: rgba(97, 153, 85, 1);
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
-.seção-equipe h2{
-    font-family: 'Nunito', sans-serif; /* Aplica a fonte Nunito */
-    font-size: 24px;
-    color: #38692E;
-    margin-bottom: 20px;
-    padding: 30px 100px;
-    text-align: left;
-    text-transform: uppercase;
+.seção-equipe h2 {
+    font-family: 'Nunito', sans-serif; /* Fonte Nunito para texto moderno e limpo */
+    font-size: 24px; /* Tamanho de fonte para destaque */
+    color: rgba(97, 153, 85, 1);
+    ; /* Cor verde para reforçar a temática agrícola */
+    margin-bottom: 20px; /* Espaço inferior entre o título e o próximo conteúdo */
+    padding: 30px 20px; /* Reduzi padding horizontal para trazer o título mais à esquerda */
+    text-align: left; /* Alinhamento à esquerda */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    border-left: 5px solid rgba(56, 105, 46, 1); /* Linha decorativa à esquerda para destacar o título */
+    border-bottom: 5px solid rgba(56, 105, 46, 1);/* Linha decorativa à baixo para destacar o título */
 }
 
 .seção-equipe {
@@ -159,16 +168,20 @@ nav ul li a:hover {
 
 .orientador {
     text-align: center;
-    margin: 10px; /* Reduz as margens para melhor distribuição */
-    max-width: 300px; /* Ajuste para que todas as descrições fiquem consistentes */
-    flex: 1 1 calc(33.33% - 40px); /* Permite 3 orientadores por linha com espaçamento */
+    margin: 10px; /* Mantém margens consistentes */
+    max-width: 250px; /* Ajusta o tamanho máximo dos cards */
+    flex: 1 1 calc(25% - 40px); /* Quatro cards por linha com espaçamento */
+    background-color: #f9f9f9; /* Fundo suave para destacar cada integrante */
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Suave sombra para destacar os cards */
 }
 
 .orientador img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 2px solid #ddd;
+    border: 5px solid #ddd;
 }
 
 .orientador p {
@@ -194,5 +207,64 @@ nav ul li a:hover {
 @media (max-width: 480px) {
     .orientador {
         flex: 1 1 100%; /* Um por linha em telas pequenas */
+    }
+}
+
+/* Container flex para alinhar os membros da equipe */
+
+.equipe-membros {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha automática */
+    justify-content: space-between; /* Espaçamento entre os elementos */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px;
+}
+
+/* Estilo dos integrantes */
+.integrante {
+    text-align: center;
+    margin: 10px; /* Mantém margens consistentes */
+    max-width: 250px; /* Ajusta o tamanho máximo dos cards */
+    flex: 1 1 calc(20% - 40px); /* Quatro cards por linha com espaçamento */
+    background-color: #f9f9f9; /* Fundo suave para destacar cada integrante */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1); /* Suave sombra para destacar os cards */
+}
+
+/* Estilo das imagens dos integrantes */
+.integrante img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner sem distorção */
+}
+
+/* Estilo do texto dentro do card */
+.integrante p {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+    text-align: justify; /* Alinha descrição dos integrantes de forma justificada */
+}
+
+/* Destaque para o nome do integrante */
+.integrante p strong {
+    font-size: 1.2em;
+    color: #000;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .integrante {
+        flex: 1 1 calc(50% - 20px); /* Dois cards por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .integrante {
+        flex: 1 1 100%; /* Um card por linha em telas pequenas */
     }
 }

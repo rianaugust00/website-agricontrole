@@ -1,0 +1,65 @@
+/* -------------------------------------------
+   ESTILOS PARA O RODAPÉ
+-------------------------------------------- */
+.footer-contato {
+    background-color: rgba(56, 105, 46, 0.9); /* Opacidade ajustada para uma cor de fundo mais suave */
+    color: #FFF;
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar um destaque */
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-info, .footer-social, .footer-credits {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.footer-info h3, .footer-social h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ebf08c;
+    line-height: 1.4; /* Melhorando o espaçamento entre as linhas */
+}
+
+.footer-social a {
+    color: #ebf08c;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s, text-decoration 0.3s; /* Transição suave */
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+    color: #fff; /* Altera a cor ao passar o mouse */
+}
+
+.footer-credits {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #BBB;
+    line-height: 1.5; /* Melhorando o espaçamento entre as linhas */
+}
+
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column; /* Seções em coluna em telas pequenas */
+        text-align: center;
+    }
+
+    .footer-info, .footer-social, .footer-credits {
+        margin: 20px 0; /* Aumentando o espaçamento entre as seções */
+    }
+}
+

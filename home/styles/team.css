@@ -12,9 +12,9 @@
 
 .seção-equipe h1 {
     font-family: 'Nunito', sans-serif;
-    font-size: 32px;
+    font-size: 33px;
     color: rgba(97, 153, 85, 1);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
 
@@ -22,11 +22,12 @@
     font-family: 'Nunito', sans-serif;
     font-size: 24px;
     color: rgba(97, 153, 85, 1);
-    margin-bottom: 20px;
-    padding: 30px 20px;
+    margin-bottom: 15px;
+    padding: 30px 30px;
     text-align: left;
     text-transform: uppercase;
     border-left: 5px solid rgba(56, 105, 46, 1);
+    margin-bottom: 3px;
 }
 
 /* Estilos para os membros da equipe */
@@ -39,7 +40,7 @@
 
 .orientador {
     text-align: center;
-    margin: 10px;
+    margin: 9px;
     max-width: 350px;
     flex: 1 1 calc(25% - 40px);
     background-color: #f9f9f9;
@@ -47,19 +48,20 @@
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease; /* Adiciona animação */
+    margin-bottom: 60px;
 }
 
 .orientador img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 5px solid rgba(56, 105, 46, 1);
+    border: 3px solid rgba(56, 105, 46, 1);
     object-fit: cover; /* Garantir que a imagem não distorça */
 }
 
 .orientador p {
     font-family: 'Nunito', sans-serif;
-    margin-top: 10px;
+    margin-top: 13px;
     font-size: 1em;
     color: #333;
     text-align: justify;
@@ -75,38 +77,24 @@
     transform: translateY(-10px); /* Levanta o membro ao passar o mouse */
 }
 
+
 /*
 --------------------------------------------------
 Estilo geral para a div que contém os integrantes
 --------------------------------------------------
 */
 
-.integrantesPesquisa {
-    display: flex; /* Exibe os artigos em linha */
-    justify-content: space-between; /* Distribui os artigos com espaçamento entre eles */
-    gap: 20px; /* Adiciona um espaço entre os artigos */
-    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas se necessário */
-    padding: 20px; /* Adiciona um pouco de espaço interno */
-}
-
-.integrantesDev {
-    display: flex; /* Exibe os artigos em linha */
-    justify-content: space-between; /* Distribui os artigos com espaçamento entre eles */
-    gap: 20px; /* Adiciona um espaço entre os artigos */
-    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas se necessário */
-    padding: 20px; /* Adiciona um pouco de espaço interno */
-}
-
 /* Estilo para cada artigo (integrante) */
 .integrante {
     text-align: center; /* Centraliza o texto dentro de cada artigo */
     background-color: #f9f9f9; /* Fundo claro para os artigos */
-    padding: 20px; /* Espaço interno para cada artigo */
-    border-radius: 10px; /* Bordas arredondadas */
+    padding: 30px 15px; /* Espaço interno para cada artigo */
+    border-radius: 9px; /* Bordas arredondadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor dos artigos */
     width: 22%; /* Define uma largura para que fiquem em linha, mas podem ajustar-se */
     min-width: 200px; /* Evita que os artigos fiquem muito estreitos em telas pequenas */
-    margin-bottom: 20px; /* Espaço entre as linhas */
+    margin-bottom: 21px; /* Espaço entre as linhas */
+    transition: transform 0.3s ease; /* Adiciona animação */
 }
 
 /* Estilo para as imagens */
@@ -116,10 +104,32 @@ Estilo geral para a div que contém os integrantes
     border-radius: 50%; /* Torna a imagem redonda */
     object-fit: cover; /* Garante que a imagem não distorça */
     margin-bottom: 15px; /* Espaço abaixo da imagem */
-    border: 5px solid rgba(56, 105, 46, 1);
+    border: 3px solid rgba(56, 105, 46, 1);
 }
 
+.integrante:hover {
+    transform: translateY(-10px); /* Levanta o membro ao passar o mouse */
+}
 
+.integrantesPesquisa {
+    display: flex; /* Exibe os artigos em linha */
+    justify-content: space-between; /* Distribui os artigos com espaçamento entre eles */
+    gap: 21px; /* Adiciona um espaço entre os artigos */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas se necessário */
+    padding: 30px 15px; /* Adiciona um pouco de espaço interno */
+    object-fit: cover; /* Garantir que a imagem não distorça */
+    margin-bottom: 30px;
+}
+
+.integrantesDev {
+    display: flex; /* Exibe os artigos em linha */
+    justify-content: space-between; /* Distribui os artigos com espaçamento entre eles */
+    gap: 21px; /* Adiciona um espaço entre os artigos */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas se necessário */
+    padding: 30px 15px; /* Adiciona um pouco de espaço interno */
+    object-fit: cover; /* Garantir que a imagem não distorça */
+    margin-bottom: 30px;
+}
 
 /* Ajuste para telas menores */
 @media (max-width: 768px) {

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o CSS do cabeçalho -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/formLog.css">
+</head>
+
+<body class="login">
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo">
+                <img src="imagens/FramesAndLogo/hort.png" alt="Logo AgriControle" class="header__logo-img">
+                <h1 class="header__logo-title"></h1>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#ferramenta" class="header__nav-link">Ferramenta</a></li>
+                    <li class="header__nav-item"><a href="#curso" class="header__nav-link">Curso</a></li>
+                    <li class="header__nav-item"><a href="#equipe" class="header__nav-link">Equipe</a></li>
+                    <li class="header__nav-item"><a href="#download" class="header__nav-link">Download</a></li>
+                    <li class="header__nav-item"><a href="login.html"
+                            class="header__nav-link header__nav-link--login">Login</a></li>
+                    <li class="header__nav-item"><a href="#cadastrar-se"
+                            class="header__nav-link header__nav-link--register">Cadastrar-se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="login__section">
+        <div class="login__container">
+            <div class="login__imagem">
+                <img src="imagens/FramesAndLogo/loginfundo.jpg" alt="ImgFundoLogin" class="login__imagem-img">
+            </div>
+            <!-- Primeiro Container Branco -->
+            <div class="login__form-container">
+                <h2 class="login__form-title">Faça login</h2>
+            </div>
+            <!-- Segundo Container Branco com Formulário -->
+            <div class="login__form-container">
+                <form class="login__form">
+                    <label for="name" class="login__form-label">Nome</label>
+                    <input type="text" id="name" name="name" class="login__form-input" required>
+    
+                    <label for="email" class="login__form-label">Email</label>
+                    <input type="email" id="email" name="email" class="login__form-input" required>
+    
+                    <button type="submit" class="login__form-btn">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer__contato">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h3 class="footer__info-title">Contato</h3>
+                <p><strong>Email:</strong> agricontroleutfpr@gmail.com </p>
+                <p><strong>Telefone:</strong> +55 (41) 1234-5678</p>
+                <p><strong>Endereço:</strong> Prolongamento da Rua Cerejeira, s/n Bairro - São Luiz, Santa Helena - PR,
+                    85892-000</p>
+            </div>
+            <div class="footer__social">
+                <h3 class="footer__social-title">Siga-nos</h3>
+                <a href="https://www.facebook.com/profile.php?id=61569344994088" target="_blank"
+                    class="footer__social-link">Facebook</a> |
+                <a href="https://www.instagram.com/agricontrole/" target="_blank"
+                    class="footer__social-link">Instagram</a> |
+                <a href="https://twitter.com" target="_blank" class="footer__social-link">Twitter</a>
+            </div>
+            <div class="footer__credits">
+                <p>&copy; 2024 AgriControle. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

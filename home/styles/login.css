@@ -1,0 +1,84 @@
+/* Geral para a página de login */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------------------------
+   RESET DE ESTILOS GERAIS
+-------------------------------------------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------
+   ESTILOS GERAIS (fonte, cor de fundo, etc)
+-------------------------------------------- */
+.page {
+    font-family: 'Nunito', sans-serif;
+    /* Usando a fonte importada do Google Fonts */
+    background-color: #f9f9f9;
+    /* Cor de fundo do corpo */
+    line-height: 1.6;
+    /* Aumentando o espaçamento entre linhas para melhor legibilidade */
+    color: #333;
+    /* Cor de texto mais suave que o preto */
+    font-size: 16px;
+    /* Tamanho de fonte padrão */
+    margin: 0;
+    padding: 0;
+}
+
+/* Usando a estrutura BEM para o body */
+.page__body {
+    background-color: #f9f9f9;
+    /* Cor de fundo do corpo */
+    color: #333;
+    /* Cor de texto mais suave que o preto */
+    font-size: 16px;
+    /* Tamanho de fonte padrão */
+    line-height: 1.6;
+}
+
+/* Exemplo de uso de um modificador para "escuro", por exemplo */
+.page__body--dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.login__imagem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__imagem-img {
+    width: 100%;
+    height: auto;
+}
+
+.login__section-imagem-title {
+    font-size: 32px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header__nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__container {
+        padding: 0 10px;
+    }
+}

@@ -26,7 +26,7 @@
     padding: 30px 30px;
     text-align: left;
     text-transform: uppercase;
-    border-left: 5px solid rgba(56, 105, 46, 1);
+    border-left: 6px solid rgba(56, 105, 46, 1);
     margin-bottom: 3px;
 }
 
@@ -55,21 +55,23 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 3px solid rgba(56, 105, 46, 1);
+    border: 4px solid rgba(56, 105, 46, 1);
     object-fit: cover; /* Garantir que a imagem não distorça */
 }
 
 .orientador p {
-    font-family: 'Nunito', sans-serif;
-    margin-top: 13px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 12px;
     font-size: 1em;
-    color: #333;
+    color: rgba(102, 102, 100, 1);
     text-align: justify;
+    font-size: 15px;
 }
 
 .orientador p strong {
-    font-size: 1.2em;
-    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    color: rgba(97, 153, 85, 1);
 }
 
 /* Efeito de hover nos membros da equipe */
@@ -86,6 +88,7 @@ Estilo geral para a div que contém os integrantes
 
 /* Estilo para cada artigo (integrante) */
 .integrante {
+    font-family: 'Inter' , sans-serif;
     text-align: center; /* Centraliza o texto dentro de cada artigo */
     background-color: #f9f9f9; /* Fundo claro para os artigos */
     padding: 30px 15px; /* Espaço interno para cada artigo */
@@ -97,6 +100,16 @@ Estilo geral para a div que contém os integrantes
     transition: transform 0.3s ease; /* Adiciona animação */
 }
 
+.integrante p strong{
+    font-size: 21px;
+    color: rgba(97, 153, 85, 1);
+}
+
+
+.integrante p{
+    font-size: 15px;
+    color: rgba(102, 102, 100, 1);
+}
 /* Estilo para as imagens */
 .integrante img {
     width: 100%; /* A imagem ocupa toda a largura do artigo */
@@ -104,7 +117,7 @@ Estilo geral para a div que contém os integrantes
     border-radius: 50%; /* Torna a imagem redonda */
     object-fit: cover; /* Garante que a imagem não distorça */
     margin-bottom: 15px; /* Espaço abaixo da imagem */
-    border: 3px solid rgba(56, 105, 46, 1);
+    border: 4px solid rgba(56, 105, 46, 1);
 }
 
 .integrante:hover {

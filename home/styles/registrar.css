@@ -21,16 +21,16 @@ html, body {
 /* -------------------------------------------
    ESTILOS DA PÁGINA LOGIN
 -------------------------------------------- */
-body.login {
+body.registrar {
     font-family: 'Nunito', sans-serif;
     background: url('../imagens/FramesAndLogo/loginfundo.jpg') no-repeat center center fixed; /* Fundo da imagem */
     background-size: cover; /* Redimensiona para cobrir a tela */
-    color: #fff;
+    color: #38692E;
     justify-content: center;
 }
 
 /* Sessão principal do login */
-.login__section {
+.registrar__section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@ body.login {
 }
 
 /* Container do login */
-.login__container {
+.registrar__container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -52,7 +52,7 @@ body.login {
 }
 
 /* Container do formulário */
-.login__form-container {
+.registrar__form-container {
     flex: 1;
     padding: 40px;
     display: flex;
@@ -61,29 +61,28 @@ body.login {
 }
 
 /* Título do formulário */
-.login__form-title {
+.registrar__form-title {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
     color: #38692E; /* Verde para contraste */
-    
 }
 
 /* Estilo do formulário */
-.login__form {
+.registrar__form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.login__form-label {
+.registrar__form-label {
     font-size: 14px;
     font-weight: 600;
     color: #34495e;
 }
 
-.login__form-input {
+.registrar__form-input {
     padding: 12px;
     font-size: 14px;
     border: 1px solid #ddd;
@@ -92,12 +91,12 @@ body.login {
     transition: border-color 0.3s ease;
 }
 
-.login__form-input:focus {
+.registrar__form-input:focus {
     border-color: #38692E; /* Destaque no verde */
 }
 
 /* Botão do formulário */
-.login__form-btn {
+.registrar__form-btn {
     padding: 12px;
     background-color: #38692E;
     color: #fff;
@@ -109,13 +108,13 @@ body.login {
     transition: background-color 0.3s ease;
 }
 
-.login__form-btn:hover {
+.registrar__form-btn:hover {
     background-color: #2e5635;
 }
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
-    .login__container {
+    .registrar__container {
         flex-direction: column; /* Alinha verticalmente em telas menores */
     }
 }

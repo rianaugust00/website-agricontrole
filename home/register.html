@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registrar-se</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <!-- Link para o CSS do cabeçalho -->
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/registrar.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/formLog.css">
 </head>
 
-<body class="login">
+<body class="registrar">
     <header class="header">
         <div class="header__content">
             <div class="header__logo">
@@ -35,25 +35,29 @@
         </div>
     </header>
 
-    <section class="login__section">
-        <div class="login__container">
-            <div class="login__imagem">
+    <section class="registrar__section">
+        <div class="registrar__container">
+            <div class="registrar__imagem">
                 <!--img src="imagens/FramesAndLogo/loginfundo.jpg" alt="ImgFundoLogin" class="login__imagem-img"!-->
             </div>
             <!-- Primeiro Container Branco -->
-            <div class="login__form-container">
-                <h2 class="login__form-title">Login</h2>
+            <div class="registrar__form-container">
+                <h2 class="registra__form-title">Registrar-se</h2>
             </div>
             <!-- Segundo Container Branco com Formulário -->
-            <div class="login__form-container">
-                <form class="login__form">
-                    <label for="email" class="login__form-label">Email</label>
-                    <input type="text" id="email" name="email" class="login__form-input" required>
+            <div class="registrar__form-container">
+                <form class="registrar__form">
+                    <label for="nome" class="registrar__form-label">Nome</label>
+                    <input type="text" id="nome" name="nome" class="registrar__form-input" required>
 
-                    <label for="senha" class="login__form-label">Senha</label>
-                    <input type="senha" id="senha" name="senha" class="login__form-input" required>
+                    <label for="email" class="registrar__form-label">Email</label>
+                    <input type="text" id="email" name="email" class="registrar__form-input" required>
+                    
 
-                    <button type="submit" class="login__form-btn">Entrar</button>
+                    <label for="senha" class="registrar__form-label">Senha</label>
+                    <input type="senha" id="senha" name="senha" class="registrar__form-input" required>
+
+                    <button type="submit" class="registrar__form-btn">Entrar</button>
                 </form>
             </div>
         </div>

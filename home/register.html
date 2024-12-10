@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar-se</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <!-- Link para o CSS do cabeçalho -->
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/registrar.css">
@@ -16,10 +17,9 @@
 <body class="registrar">
     <header class="header">
         <div class="header__content">
-            <div class="header__logo">
+            <a href="index.html">
                 <img src="imagens/FramesAndLogo/hort.png" alt="Logo AgriControle" class="header__logo-img">
-                <h1 class="header__logo-title"></h1>
-            </div>
+            </a>
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="#ferramenta" class="header__nav-link">Ferramenta</a></li>
@@ -52,12 +52,16 @@
 
                     <label for="email" class="registrar__form-label">Email</label>
                     <input type="text" id="email" name="email" class="registrar__form-input" required>
-                    
+
 
                     <label for="senha" class="registrar__form-label">Senha</label>
                     <input type="senha" id="senha" name="senha" class="registrar__form-input" required>
 
-                    <button type="submit" class="registrar__form-btn">Entrar</button>
+                    <label for="repetir senha" class="registrar__form-label"> Repedir Senha</label>
+                    <input type="RepetirSenha" id="RepetirSenha" name="RepetirSenha" class="registrar__form-input"
+                        required>
+
+                    <button type="submit" class="registrar__form-btn">Registrar-se</button>
                 </form>
             </div>
         </div>
@@ -73,14 +77,24 @@
                 <p><strong>Endereço:</strong> Prolongamento da Rua Cerejeira, s/n Bairro - São Luiz, Santa Helena - PR,
                     85892-000</p>
             </div>
+
             <div class="footer__social">
                 <h3 class="footer__social-title">Siga-nos</h3>
                 <a href="https://www.facebook.com/profile.php?id=61569344994088" target="_blank"
-                    class="footer__social-link">Facebook</a> |
+                    class="footer__social-link">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                |
                 <a href="https://www.instagram.com/agricontrole/" target="_blank"
-                    class="footer__social-link">Instagram</a> |
-                <a href="https://twitter.com" target="_blank" class="footer__social-link">Twitter</a>
+                    class="footer__social-link">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                |
+                <a href="https://twitter.com" target="_blank" class="footer__social-link">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
             </div>
+
             <div class="footer__credits">
                 <p>&copy; 2024 AgriControle. Todos os direitos reservados.</p>
             </div>

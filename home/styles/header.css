@@ -80,7 +80,9 @@
 
 /* Estilo do botão de Login */
 .header__nav-link--login {
-    background-color: rgba(218, 134, 87, 1); /* Fundo verde */
+    background-color: #853A10; /* Fundo verde */
+    border-color: #632807;
+    border:2px solid #632807;
     color: #ffffff;
     padding: 5px 40px;
     border-radius: 4px;
@@ -90,7 +92,7 @@
 }
 
 .header__nav-link--login:hover {
-    background-color: #2a4c21; /* Tom mais escuro quando passa o mouse */
+    background-color: #632807; /* Tom mais escuro quando passa o mouse */
     transform: scale(1.05); /* Efeito de aumentar o botão */
 }
 

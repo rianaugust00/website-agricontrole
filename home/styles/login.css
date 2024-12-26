@@ -36,7 +36,8 @@ body.login {
     align-items: center;
     min-height: 100vh; /* Tela inteira */
     padding: 20px;
-    backdrop-filter: blur(5px); /* Adiciona desfoque no fundo */
+    backdrop-filter: blur(4px); /* Adiciona desfoque no fundo */
+    padding-top: 240px;
 }
 
 /* Container do login */
@@ -99,7 +100,7 @@ body.login {
 /* Botão do formulário */
 .login__form-btn {
     padding: 12px;
-    background-color: rgba(218, 134, 87, 1);
+    background-color: #853A10;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
@@ -110,7 +111,7 @@ body.login {
 }
 
 .login__form-btn:hover {
-    background-color: #2e5635;
+    background-color: #632807;
 }
 
 /* Estilos responsivos */

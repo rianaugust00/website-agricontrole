@@ -80,7 +80,7 @@
 
 /* Estilo do botão de Login */
 .header__nav-link--login {
-    background-color: #853A10; /* Fundo verde */
+    background-color: #853A10;
     border-color: #632807;
     border:2px solid #632807;
     color: #ffffff;

@@ -1,98 +1,116 @@
-/* Estilo para o título "Ferramentas" */
-.seção-ferramenta h2:first-of-type {
-    text-align: center;
-    font-size: 2.5rem;
-    color: rgba(97, 153, 85, 1);
-    position: relative; /* Necessário para posicionamento da barra */
-}
-
-.seção-ferramenta h2:first-of-type::before {
-    content: ''; /* Cria um elemento vazio */
-    position: absolute;
-    left: -20px; /* Ajuste da posição da barra à esquerda */
-    top: 0;
-    height: 100%; /* A altura será a altura do título */
-    width: 5px; /* Largura da barra */
-    background-color: rgba(97, 153, 85, 1); /* Cor da barra */
-}
-
-/* Estilo para a seção Ferramentas */
+/* -------------------------------------------
+   SEÇÃO FERRAMENTAS
+-------------------------------------------- */
 .seção-ferramenta {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    font-family: 'Nunito', sans-serif;
-}
-
-/* Estilo para o título "Ferramentas" */
-.seção-ferramenta h1:first-of-type {
+    background-color: #ffffff;
+    padding: 50px 20px;
     text-align: center;
-    font-size: 2.5rem;
-    color: rgba(97, 153, 85, 1);
+    max-width: 1200px; /* Ajuste para um máximo de largura */
+    min-height: 600px; /* Garantir uma altura mínima */
+    margin: 0 auto; /* Centraliza a seção */
 }
 
-/* Estilo do container principal da seção Ferramentas */
-.seção-ferramenta .conteiner-ferramentas {
+.seção-ferramenta h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 33px;
+    color: rgba(97, 153, 85, 1);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.seção-ferramenta h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: rgba(97, 153, 85, 1);
+    margin-bottom: 15px;
+    padding: 30px 30px;
+    text-align: left;
+    text-transform: uppercase;
+    border-left: 6px solid rgba(56, 105, 46, 1);
+    margin-bottom: 3px;
+}
+
+/* Estilos para o container de ferramentas */
+.conteiner-ferramentas {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-    width: 100%;
-    max-width: 1200px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
-/* Estilo da lista de ferramentas */
-.seção-ferramenta ul {
-    list-style-type: disc;  /* Mantém o estilo de lista */
-    padding-left: 2rem;  /* Espaçamento à esquerda */
-    font-size: 1.2rem;
-    color: #444;
+.conteiner-ferramentas ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 27px;
+    color: #853A10;
+    text-align: left;
+    margin: 0 20px;
 }
 
-.seção-ferramenta ul li {
-    margin-bottom: 0.5rem;  /* Espaço entre os itens da lista */
+.conteiner-ferramentas ul li {
+    margin-bottom: 10px;
 }
 
-/* Estilo do container para a imagem de ferramentas */
-.seção-ferramenta .img-container {
+.img-container {
     flex: 1;
+    text-align: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Estilos para o container de relatórios */
+.relatorio-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
     align-items: center;
 }
 
-/* Estilo para a seção Relatórios */
-.seção-ferramenta h1:nth-of-type(2) {
-    text-align: center;
-    font-size: 2.5rem;
-    color: rgba(97, 153, 85, 1);
-    margin-bottom: 1rem;
-}
-
-/* Ajuste da imagem do relatório */
-.seção-ferramenta .imgrelatorio {
-    max-width: 42%; /* Limita a largura da imagem */
+.relatorio-container img {
+    max-width: 39%;
     height: auto;
     border-radius: 8px;
-    margin-right: 3rem; /* Espaçamento entre a imagem e o título */
+    object-fit: cover;
 }
 
-/* Estilo do container da imagem e lista */
-.seção-ferramenta .relatorio-container {
-    display: flex;
-    align-items:center;
-    gap: 2rem;  /* Espaço entre a imagem e a lista */
-    margin-bottom: 1rem;  /* Espaço abaixo da linha com a imagem e a lista */
+.relatorio-container ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 27px;
+    color: #853A10;
+    text-align: left;
+    margin: 0 20px;
 }
 
-/* Estilo para o título h2 */
-.seção-ferramenta h2 {
-    font-size: 1.8rem;
-    color: rgba(56, 105, 46, 1);
-    margin: 0;
-    font-weight: 600;
-    text-align: left;  /* Alinha o título à esquerda */
-    margin-bottom: 0.5rem;  /* Espaçamento abaixo do título */
+.relatorio-container ul li {
+    margin-bottom: 10px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .conteiner-ferramentas,
+    .relatorio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteiner-ferramentas ul,
+    .relatorio-container ul {
+        text-align: center;
+    }
+
+    .img-container img,
+    .relatorio-container img {
+        max-width: 80%;
+    }
 }

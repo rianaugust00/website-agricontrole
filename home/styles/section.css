@@ -6,7 +6,7 @@
     height: 510px;
     background: 
         linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), /* Sobreposição escura */
-        url('https://s3-alpha-sig.figma.com/img/2f54/3be5/027fe67e992b2ed75fae634414dbaf55?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NEcrJZGxSonDfcOU3ll2daZ7V9c3TzroT9XDoxkUGsguWQ9k4eZJSv-SG6GEgFMNDzV09VNo3~YPXZqvvtOlxUWK-ImZKmQbLBYjiPAr2YFzDEU0QJTjjg0v-BSBUnfVZDTe4fRrHnq-2FhCNizKbDpT0FAXEPXkpnmvqNRZCQWFtcarv-IIDHU~kfpXIyRRbrtDJ2otTehVTYZkpNU0BhinCFs4ACVERVhyObgupiVA3BQAMSPTegQ9uuPstmR735AG~gnvcZaV4gMYQtNEvzV~q59ANMFOpX~u-pY3BS2QHncg9u5ZbOuUSuEjwkEQhRXcfJyVWqmjeU10AvBBpQ__'); /* Imagem de fundo */
+        url('../imagens/FramesAndLogo/fundoHome.jpg'); /* Imagem de fundo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -45,13 +45,18 @@
     padding-left: 45px;
     font-family: 'Nunito', sans-serif;
     font-size: 27px;
-    color: #853A10;
+    color: #666664;
     text-align: left;
-    margin: 0 20px;
+    margin:  30px;
+}
+
+.conteiner-ferramentas ul li::marker {
+    color: rgba(56, 105, 46, 1); /* Altere a cor conforme necessário */
+    font-size: 1.2em; /* Opcional: Ajuste o tamanho do marcador */
 }
 
 .conteiner-ferramentas ul li {
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
 .img-container {
@@ -59,12 +64,16 @@
     text-align: center;
 }
 
+
 .img-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    max-width: 42%;
+    height:auto;
+    border-radius: 3px;
     object-fit: cover;
+    position: relative;
+    top: -15px;
 }
+
 
 /* Estilos para o container de relatórios */
 .relatorio-container {
@@ -77,13 +86,12 @@
 }
 
 .relatorio-container img {
-    order: 2; /* Define a imagem para vir depois */
-    flex: 1; /* Permite que a imagem ocupe o espaço necessário */
-    max-width: 45%;
-    height: auto;
-    border-radius: 8px;
+    max-width: 42%;
+    height:auto;
+    border-radius: 3px;
     object-fit: cover;
-    align-self: flex-start;
+    position: relative;
+    top: -15px;
 }
 
 .relatorio-container ul {
@@ -93,14 +101,22 @@
     padding-left: 45px;
     font-family: 'Nunito', sans-serif;
     font-size: 27px;
-    color: #853A10;
+    color: #666664;
     text-align: left;
-    margin: 0 20px;
+    margin: 0 100px;
 }
 
+
+
 .relatorio-container ul li {
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
+
+.relatorio-container ul li::marker {
+    color: rgba(56, 105, 46, 1); /* Altere a cor conforme necessário */
+    font-size: 1.2em; /* Opcional: Ajuste o tamanho do marcador */
+}
+
 
 /* Ajuste para telas menores */
 @media (max-width: 768px) {

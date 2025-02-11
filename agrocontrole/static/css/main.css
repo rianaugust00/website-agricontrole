@@ -1,0 +1,26 @@
+/* -------------------------------------------
+   RESET DE ESTILOS GERAIS
+-------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------
+   ESTILOS GERAIS (fonte, etc)
+-------------------------------------------- */
+body {
+    font-family: 'Nunito', sans-serif;
+    /* Usando a fonte importada do Google Fonts */
+    background-color: #f9f9f9;
+    /* Cor de fundo do corpo */
+    line-height: 1.6;
+    /* Aumentando o espaçamento entre linhas para melhor legibilidade */
+    color: #333;
+    /* Cor de texto mais suave que o preto */
+    font-size: 16px;
+    /* Tamanho de fonte padrão */
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriControle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/team.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/section.css') }}">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='imagens/FramesAndLogo/hort.png') }}" alt="Logo AgriControle">
+                <h1></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#ferramenta">Ferramenta</a></li>
+                    <li><a href="#curso">Curso</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="login" class="login-link">Login</a></li>
+                    <li><a href="registro" class="cadastrar-lik">Cadastrar-se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="seção-imagem">
+        <h2>Bem-vindo ao AgriControle</h2>
+        <p>O projeto AgriControle visa capacitar agricultores familiares do Paraná na gestão financeira de suas propriedades, utilizando metodologias ativas e ferramentas digitais acessíveis. O objetivo é fortalecer a tomada de decisão financeira, promover a inclusão digital e melhorar a sustentabilidade econômica das pequenas propriedades rurais.</p>
+    </div>
+
+    <!--Seção de Ferramenta-->
+
+    <!--Seção de Equipe-->
+
+    <section id="equipe" class="seção-equipe">
+        <h1>Equipe AgriControle</h1>
+
+        <!-- Adicionar orientadores da equipe aqui -->
+
+        <h2>Orientadores</h2>
+        <div class="equipe-membros">
+            <!-- Orientador 1 -->
+            <article class="orientador">
+                <img src="{{ url_for('static', filename='imagens/Equipe/OrieGlauco.png') }}" 
+                    alt="Foto de Glauco Vieira Miranda">
+                <p><strong>Glauco Vieira Miranda</strong></p>
+                <p>
+                    Professor da Universidade Tecnológica Federal do Paraná, é destaque internacional em pesquisa sobre
+                    melhoramento de plantas e inteligência artificial aplicada à agricultura, com mais de 5.100 citações
+                    acadêmicas, 176 artigos publicados, patentes registradas e coordenação de projetos inovadores que
+                    somam mais de R$ 1,5 milhão em financiamento nos últimos 3 anos.
+                </p>
+            </article>
+
+            <!-- Orientador 2 -->
+            <article class="orientador">
+                <img src="{{ url_for('static', filename='imagens/Equipe/OrieGiane.png') }}"  alt="Foto de Giane Carla Ito">
+                <p><strong>Giane Carla Ito</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+
+            <!-- Orientador 3 -->
+            <article class="orientador">
+                <img src="{{ url_for('static', filename='imagens/Equipe/OrieGiuvane.jpg') }}" alt="Foto de Giuvanne Conti">
+                <p><strong>Giuvanne Conti</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+        </div>
+
+        <!-- Adicionar membros da equipe de pesquisa aqui -->
+
+        <h2>Integrantes da equipe de pesquisa</h2>
+
+        <div class="integrantesPesquisa">
+            <!-- Integrante 1 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/PesqSarah.jpg') }}"  alt="Foto de Sarah Wachtel">
+                <p><strong>Sarah Wachtel</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+        
+            <!-- Integrante 2 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/PesqJuliana.jpg') }}" alt="Foto de Juliana Vaz">
+                <p><strong>Juliana Vaz</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+        
+            <!-- Integrante 3 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/PesqAna.jpg') }}" alt="Foto de Ana Clara Rios">
+                <p><strong>Ana Clara Rios</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+        
+            <!-- Integrante 4 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/PesqIsa.jpg') }}" alt="Foto de Isadora Marques">
+                <p><strong>Isadora Marques</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+        </div>
+        
+
+        <!-- Adicionar membros da equipe de desenvolvimento aqui -->
+
+        <h2>Integrantes da equipe de desenvolvimento</h2>
+
+        <div class="integrantesDev">
+            <!-- Integrante 1 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/DevRian.jpg') }}" alt="Foto de Rian Augusto">
+                <p><strong>Rian Augusto</strong></p>
+                <p>Desenvolvedor Front-End e Estudante do curso de Ciência da Computação pela UTFPR do campusa Santa Helena.</p>
+            </article>
+
+            <!-- Integrante 2 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/DevKaizer.jpg') }}" alt="Foto de Eduardo Kaizer">
+                <p><strong>Eduardo Kaizer</strong></p>
+                <p>Desenvolvedor Mobile e Estudante do curso de Ciência da Computação pela UTFPR do campusa Santa Helena.</p>
+            </article>
+
+            <!-- Integrante 3 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/DavCarboneri.jpg') }}" alt="Foto de Gabriel Carboneri">
+                <p><strong>Gabriel Carboneri</strong></p>
+                <p>Desenvolvedor Back-End e Estudante do curso de Ciência da Computação pela UTFPR do campusa Santa Helena.</p>
+            </article>
+
+            <!-- Integrante 4 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/DevDanilo.jpg') }}" alt="Foto de Danilo Bruno">
+                <p><strong>Danilo Bruno</strong></p>
+                <p>Desingner, Desenvolvedor Front-End e Estudante do curso de Engenahria de Software pela UTFPR do campusa Cornélio Procópio.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer-contato">
+        <div class="container-footer">
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p><strong>Email:</strong> agricontroleutfpr@gmail.com </p>
+                <p><strong>Telefone:</strong> +55 (41) 1234-5678</p>
+                <p><strong>Endereço:</strong> Prolongamento da Rua Cerejeira, s/n Bairro - São Luiz, Santa Helena - PR, 85892-000</p>
+            </div>
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <a href="https://www.facebook.com/profile.php?id=61569344994088" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/agricontrole/" target="_blank">Instagram</a> |
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+            <div class="footer-credits">
+                <p>&copy; 2024 AgriControle. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

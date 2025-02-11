@@ -1,0 +1,102 @@
+/* -------------------------------------------
+   ESTILOS DO CABEÇALHO
+-------------------------------------------- */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff; /* Cor do fundo */
+    color: #38692E; /* Cor do texto */
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Z-index para sobrepor o conteúdo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar o cabeçalho */
+    width: 100%;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adicionando espaçamento nas laterais */
+}
+
+/* Media Query para dispositivos menores */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Torna os itens empilhados em telas pequenas */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 160px;
+    max-width: 100%; /* Garante que a logo não ultrapasse o espaço disponível */
+    height: auto;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-flex; /* Ajuste para garantir que os itens fiquem alinhados */
+}
+
+nav ul li a {
+    color: rgba(56, 105, 46, 1);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ebf08c; /* Cor de destaque ao passar o mouse */
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 15px; /* Diminui o espaço entre os links em telas menores */
+    }
+}
+
+/* Estilo do botão de Login */
+.login-link {
+    background-color: #38692E; /* Fundo verde */
+    color: #ffffff;
+    padding: 5px 40px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-link:hover {
+    background-color: #2a4c21; /* Tom mais escuro quando passa o mouse */
+    transform: scale(1.05); /* Efeito de aumentar o botão */
+}
+
+/* Ajustando o tamanho do botão em telas menores */
+@media (max-width: 768px) {
+    .login-link {
+        padding: 8px 30px; /* Reduz o padding em telas pequenas */
+    }
+}

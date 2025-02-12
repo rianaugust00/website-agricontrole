@@ -1,0 +1,45 @@
+/* -------------------------------------------
+   RESET DE ESTILOS GERAIS
+-------------------------------------------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------
+   ESTILOS GERAIS (fonte, cor de fundo, etc)
+-------------------------------------------- */
+.page {
+    font-family: 'Nunito', sans-serif;
+    /* Usando a fonte importada do Google Fonts */
+    background-color: #f9f9f9;
+    /* Cor de fundo do corpo */
+    line-height: 1.6;
+    /* Aumentando o espaçamento entre linhas para melhor legibilidade */
+    color: #333;
+    /* Cor de texto mais suave que o preto */
+    font-size: 16px;
+    /* Tamanho de fonte padrão */
+    margin: 0;
+    padding: 0;
+}
+
+/* Usando a estrutura BEM para o body */
+.page__body {
+    background-color: #f9f9f9;
+    /* Cor de fundo do corpo */
+    color: #333;
+    /* Cor de texto mais suave que o preto */
+    font-size: 16px;
+    /* Tamanho de fonte padrão */
+    line-height: 1.6;
+}
+
+/* Exemplo de uso de um modificador para "escuro", por exemplo */
+.page__body--dark {
+    background-color: #333;
+    color: #fff;
+}

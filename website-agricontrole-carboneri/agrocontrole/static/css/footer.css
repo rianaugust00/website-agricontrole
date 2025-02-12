@@ -1,0 +1,110 @@
+/* -------------------------------------------
+   ESTILOS PARA O RODAPÉ
+-------------------------------------------- */
+
+/* Bloco principal do rodapé */
+.footer__contato {
+    background-color: rgba(56, 105, 46, 0.9); /* Opacidade ajustada para uma cor de fundo mais suave */
+    color: #FFF;
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar um destaque */
+}
+
+/* Elemento de contêiner do rodapé */
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Elementos internos do rodapé */
+.footer__info, .footer__social, .footer__credits {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+/* Títulos dentro de informações e social */
+.footer__info-title, .footer__social-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ebf08c;
+    line-height: 1.4; /* Melhorando o espaçamento entre as linhas */
+}
+
+/* Links dentro da seção de redes sociais */
+.footer__social-link {
+    color: #ebf08c;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s, text-decoration 0.3s; /* Transição suave */
+}
+
+/* Estado de hover para os links das redes sociais */
+.footer__social-link--hover {
+    text-decoration: underline;
+    color: #fff; /* Altera a cor ao passar o mouse */
+}
+
+/* Créditos do rodapé */
+.footer__credits {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #BBB;
+    line-height: 1.5; /* Melhorando o espaçamento entre as linhas */
+}
+
+/* Estilo para a seção de redes sociais */
+.footer__social {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 20px;
+    font-size: 16px; /* Tamanho da fonte para texto */
+}
+
+/* Estilo para os links sociais */
+.footer__social-link {
+    display: inline-flex; /* Flex para alinhar ícone e texto */
+    align-items: center; /* Alinha ícone e texto verticalmente */
+    text-decoration: none; /* Remove sublinhado */
+    color: #ebf08c; /* Cor padrão */
+    margin: 0 10px; /* Espaçamento horizontal */
+    transition: color 0.3s ease; /* Efeito de hover */
+}
+
+/* Ícones de redes sociais */
+.footer__social-link i {
+    font-size: 20px; /* Tamanho do ícone */
+    margin-right: 8px; /* Espaço entre ícone e texto */
+    color: #ebf08c; /* Cor inicial dos ícones */
+}
+
+/* Efeito ao passar o mouse nos links */
+.footer__social-link:hover {
+    color: #fff; /* Altera a cor do texto */
+}
+
+.footer__social-link:hover i {
+    color: #fff; /* Altera a cor do ícone */
+}
+
+/* Links separadores (pipes) */
+.footer__social-link + span {
+    color: #ebf08c; /* Cor do separador */
+    margin: 0 5px; /* Espaçamento para o separador */
+}
+
+/* Modificadores para layouts responsivos */
+@media (max-width: 768px) {
+    .footer__container {
+        flex-direction: column; /* Seções em coluna em telas pequenas */
+        text-align: center;
+    }
+
+    .footer__info, .footer__social, .footer__credits {
+        margin: 20px 0; /* Aumentando o espaçamento entre as seções */
+    }
+}

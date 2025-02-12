@@ -1,0 +1,122 @@
+/* Geral para a página de login */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------------------------
+   RESET DE ESTILOS GERAIS
+-------------------------------------------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------
+   ESTILOS DA PÁGINA LOGIN
+-------------------------------------------- */
+body.login {
+    font-family: 'Nunito', sans-serif;
+    background: url("/static/imagens/FramesAndLogo/loginfundo.jpg") no-repeat center center fixed; /* Fundo da imagem */
+    background-size: cover; /* Redimensiona para cobrir a tela */
+    color: #fff;
+    justify-content: center;
+}
+
+/* Sessão principal do login */
+.login__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Tela inteira */
+    padding: 20px;
+    backdrop-filter: blur(4px); /* Adiciona desfoque no fundo */
+    padding-top: 240px;
+}
+
+/* Container do login */
+.login__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 360px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com opacidade */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Container do formulário */
+.login__form-container {
+    flex: 1;
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Título do formulário */
+.login__form-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #38692E; /* Verde para contraste */
+    
+}
+
+/* Estilo do formulário */
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login__form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.login__form-input {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.login__form-input:focus {
+    border-color: #38692E; /* Destaque no verde */
+}
+
+/* Botão do formulário */
+.login__form-btn {
+    padding: 12px;
+    background-color: #853A10;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login__form-btn:hover {
+    background-color: #632807;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .login__container {
+        flex-direction: column; /* Alinha verticalmente em telas menores */
+    }
+}

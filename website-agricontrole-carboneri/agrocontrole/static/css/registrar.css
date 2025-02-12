@@ -1,0 +1,132 @@
+        /* -------------------------------------------
+        RESET DE ESTILOS GERAIS
+        -------------------------------------------- */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Geral para a página de login */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* -------------------------------------------
+        ESTILOS DA PÁGINA LOGIN
+        -------------------------------------------- */
+        body.registrar {
+            font-family: 'Nunito', sans-serif;
+            background: url('../imagens/FramesAndLogo/loginfundo.jpg') no-repeat center center fixed; /* Fundo da imagem */
+            background-size: cover; /* Redimensiona para cobrir a tela */
+            color: #38692E; /* Cor do texto */
+            justify-content: center; /* Centraliza o conteúdo */
+        }
+
+        /* Sessão principal do login */
+        .registrar__section {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: calc(100vh - altura_do_footer_em_px); /* Ex.: calc(100vh - 60px) */
+            padding: 30px;
+            backdrop-filter: blur(5px); /* desfoque da imagem */
+        }
+
+
+        .registrar__container {
+            display: flex;
+            flex-direction: column; /* Alinha os elementos verticalmente */
+            width: 100%;
+            max-width: 360px;
+            min-height: 100px;
+            margin-top: 270px; 
+            background-color: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+            overflow: hidden; /* Esconde conteúdo que ultrapassa as bordas */
+            padding-bottom: 120px;
+            padding: 12px;
+        }
+
+        /* Container do formulário */
+        .registrar__form-container {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            padding: 19px; /* Espaçamento interno */
+            display: flex;
+            flex-direction: column; /* Alinha itens verticalmente */
+            justify-content: center; /* Centraliza verticalmente dentro do container */
+        }
+
+        /* Título do formulário */
+        .registrar__form-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center; /* Centraliza o texto */
+        }
+
+        /* Estilo do formulário */
+        .registrar__form {
+            display: flex;
+            flex-direction: column; /* Alinha verticalmente */
+            gap: 15px; /* Espaçamento entre campos */
+        }
+
+        .registrar__form-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #34495e; /* Texto em cinza escuro */
+        }
+
+        .registrar__form-input {
+            padding: 12px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s ease; /* Transição suave ao focar */
+        }
+
+        .registrar__form-input:focus {
+            border-color: #080808; /* Destaque ao focar */
+        }
+
+        /* Botão do formulário */
+        .registrar__form-btn {
+            padding: 12px;
+            background-color: #853A10;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
+        }
+
+        .registrar__form-btn:hover {
+            background-color: #632807; /* Tom mais escuro ao passar o mouse */
+        }
+
+        /* -------------------------------------------
+        ESTILOS RESPONSIVOS
+        -------------------------------------------- */
+        @media (max-width: 768px) {
+            .registrar__container {
+                flex-direction: column; /* Alinha verticalmente em telas menores */
+            }
+
+            .registrar__form-container {
+                padding: 20px; /* Reduz o espaçamento interno */
+            }
+        }
+

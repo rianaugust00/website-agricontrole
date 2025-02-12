@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriControle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/section.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/team.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ferramentas.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/curso.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/download.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo">
+                <a href="/">
+                    <img src="{{ url_for('static', filename='imagens/FramesAndLogo/hort.png') }}" alt="Logo AgriControle" class="header__logo-img">
+                </a>
+                <h1 class="header__logo-title"></h1>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#ferramenta" class="header__nav-link">Ferramenta</a></li>
+                    <li class="header__nav-item"><a href="#curso" class="header__nav-link">Curso</a></li>
+                    <li class="header__nav-item"><a href="#equipe" class="header__nav-link">Equipe</a></li>
+                    <li class="header__nav-item"><a href="#download" class="header__nav-link">Download</a></li>
+                    <li class="header__nav-item"><a href="login"
+                            class="header__nav-link header__nav-link--login">Login</a></li>
+                    <li class="header__nav-item"><a href="registro"
+                            class="header__nav-link header__nav-link--register">Registrar-se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="seção-imagem">
+        <h2>Bem-vindo ao AgriControle</h2>
+        <p>O projeto AgriControle visa capacitar agricultores familiares do Paraná na gestão financeira de suas
+            propriedades, utilizando metodologias ativas e ferramentas digitais acessíveis. O objetivo é fortalecer a
+            tomada de decisão financeira, promover a inclusão digital e melhorar a sustentabilidade econômica das
+            pequenas propriedades rurais.</p>
+    </div>
+
+    <!--Seção de Ferramenta-->
+    <section id="ferramenta" class="seção-ferramenta">
+        <h1>Ferramentas</h1>
+
+        <h2>Gerencie você mesmo</h2>
+    
+        <div class="conteiner-ferramentas">    
+            <ul>
+                <li>Controle De Vendas</li>
+                <li>Gerenciamento De Compras</li>
+                <li>Gerenciamento De Gastos</li>
+                <li>Emissão De Relatórios</li>
+            </ul>
+            <div class="img-container">
+                <img src="{{ url_for('static', filename='imagens/FramesAndLogo/mockup.png') }}" alt="Imagem ilustrativa de ferramentas">
+            </div>
+        </div>
+    
+        <h1>Relatórios</h1>
+    
+        <h2>Tenha uma visão clara do que está acontecendo.</h2>
+    
+        <div class="relatorio-container">
+            <img src= "{{ url_for('static', filename='imagens/FramesAndLogo/relatorio.png') }}" alt="Gráfico em um laptop" class="imgrelatorio">
+            <ul>
+                <li>Informações detalhadas sobre compras, vendas, gastos e indicadores financeiros.</li>
+                <li>Personalização do período e seleção de dados específicos.</li>
+                <li>Opções de exportação para PDF ou Excel.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="curso" class="seção-curso"> 
+        <h1>Capacite-se com nossos cursos.</h1>
+    
+        <h2>Inscreva-se no curso online</h2>
+        
+        <p>Este curso online é voltado para agricultores familiares que desejam melhorar suas práticas financeiras.
+            Com ele, você aprenderá a monitorar suas finanças, prever entradas e saídas de dinheiro, e a tomar decisões estratégicas para o crescimento sustentável da sua propriedade.
+            Exploraremos ferramentas práticas e exemplos reais, para demonstrar como um controle efetivo do fluxo de caixa pode trazer mais segurança e estabilidade ao seu negócio agrícola.
+        </p>
+        
+        <button id="btn-inscrever" class="botao-inscricao">Inscreva-se agora</button>
+    </section>
+    
+
+    <!--Seção de Equipe-->
+    <section id="equipe" class="seção-equipe">
+        <h1>Equipe AgriControle</h1>
+
+        <!-- Adicionar orientadores da equipe aqui -->
+
+        <h2>Orientadores</h2>
+        <div class="equipe-membros">
+            <!-- Orientador 1 -->
+            <article class="orientador">
+                <img src= "{{ url_for('static', filename='imagens/Equipe/OrieGlauco.png') }}" alt="Foto de Glauco Vieira Miranda">
+                <p><strong>Glauco Vieira Miranda</strong></p>
+                <p>
+                    Professor da Universidade Tecnológica Federal do Paraná, é destaque internacional em pesquisa sobre
+                    melhoramento de plantas e inteligência artificial aplicada à agricultura, com mais de 5.100 citações
+                    acadêmicas, 176 artigos publicados, patentes registradas e coordenação de projetos inovadores que
+                    somam mais de R$ 1,5 milhão em financiamento nos últimos 3 anos.
+                </p>
+            </article>
+
+            <!-- Orientador 2 -->
+            <article class="orientador">
+                <img src="{{ url_for('static', filename='imagens/Equipe/OrieGiane.png') }}" alt="Foto de Giane Carla Ito">
+                <p><strong>Giani Carla Ito</strong></p>
+                <p>Doutora em Computação Aplicada (INPE), com ampla experiência em docência, pesquisa e gestão acadêmica.
+                     Atua como assessora de avaliação institucional e professora na UTFPR, ministrando disciplinas como Banco de Dados e Programação Paralela.
+                     Coordena a editora universitária EDUTFPR e desenvolve projetos de iniciação científica focados em tecnologia educacional e personalização de ensino.
+                      Avaliadora de cursos pelo MEC/INEP,
+                     possui histórico relevante na coordenação de cursos e orientação de trabalhos acadêmicos.</p>
+            </article>
+
+            <!-- Orientador 3 -->
+            <article class="orientador">
+                <img src="{{ url_for('static', filename='imagens/Equipe/OrieGiuvane.jpg') }}" alt="Foto de Giuvanne Conti">
+                <p><strong>Giuvane Conti</strong></p>
+                <p>Graduado em Análise e Desenvolvimento de Sistemas pela Universidade Tecnológica Federal do Paraná. Mestre em Computação Aplicada pela Universidade Estadual de Ponta Grossa.
+                     Doutor em Engenharia Agrícola pela UNIOESTE. Atualmente é professor do magistério superior na UTFPR - Campus Santa Helena</p>
+            </article>
+        </div>
+
+        <!-- Adicionar membros da equipe de pesquisa aqui -->
+
+        <h2>Integrantes da equipe de pesquisa</h2>
+
+        <div class="integrantesPesquisa">
+            <!-- Integrante 1 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/PesqSarah.jpg') }}" alt="Foto de Sarah Wachtel">
+                <p><strong>Sarah Wachtel</strong></p>
+                <p>Estudante de Agronomia na UTFPR – Campus Santa Helena, Sarah contribui para o treinamento financeiro e a aplicação dos jogos empresariais, promovendo metodologias ativas para a gestão sustentável dos agricultores familiares.</p>
+            </article>
+
+            <!-- Integrante 2 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/PesqJuliana.jpg') }}" alt="Foto de Juliana Vaz">
+                <p><strong>Juliana Vaz</strong></p>
+                <p>Graduanda em Agronomia na UTFPR – Campus Santa Helena, Juliana auxilia na elaboração das teorias do curso, adaptando o conteúdo para diferentes públicos e reforçando a educação financeira no meio rural.</p>
+            </article>
+
+            <!-- Integrante 3 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/PesqAna.jpg') }}" alt="Foto de Ana Clara Rios">
+                <p><strong>Ana Clara Rios</strong></p>
+                <p>Estudante de Agronomia na UTFPR – Campus Santa Helena, Ana Clara desenvolve e aplica jogos empresariais, tornando o aprendizado mais dinâmico e acessível para os agricultores.</p>
+            </article>
+
+            <!-- Integrante 4 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/PesqIsa.jpg') }}" alt="Foto de Isadora Marques">
+                <p><strong>Isadora Marques</strong></p>
+                <p>Estudante de Agronomia na UTFPR – Campus Santa Helena, Isadora atua na aplicação do treinamento financeiro e na disseminação das metodologias ativas, capacitando agricultores para uma gestão mais eficiente.</p>
+            </article>
+        </div>
+
+        <!-- Adicionar membros da equipe de desenvolvimento aqui -->
+
+        <h2>Integrantes da equipe de desenvolvimento</h2>
+
+        <div class="integrantesDev">
+            <!-- Integrante 1 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/DevRian.jpg') }}" alt="Foto de Rian Augusto">
+                <p><strong>Rian Augusto</strong></p>
+                <p>Desenvolvedor Front-End e Estudante do curso de Ciência da Computação pela UTFPR do campusa Santa
+                    Helena.</p>
+            </article>
+
+            <!-- Integrante 2 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/DevKaizer.jpg') }}" alt="Foto de Eduardo Kaizer">
+                <p><strong>Eduardo Kaizer</strong></p>
+                <p>Desenvolvedor Mobile e Estudante do curso de Ciência da Computação pela UTFPR do campusa Santa
+                    Helena.</p>
+            </article>
+
+            <!-- Integrante 3 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/DavCarboneri.jpg') }}" alt="Foto de Gabriel Carboneri">
+                <p><strong>Gabriel Carboneri</strong></p>
+                <p>Desenvolvedor Back-End e Estudante do curso de Ciência da Computação pela UTFPR do campusa Santa
+                    Helena.</p>
+            </article>
+
+            <!-- Integrante 4 -->
+            <article class="integrante">
+                <img src="{{ url_for('static', filename='imagens/Equipe/DevDanilo.jpg') }}" alt="Foto de Danilo Bruno">
+                <p><strong>Danilo Bruno</strong></p>
+                <p>Desingner, Desenvolvedor Front-End e Estudante do curso de Análise e Desenvolvimento de Sistemas pela UTFPR do
+                    campusa Cornélio Procópio.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="download" class="seçao-download">
+        <h1>Download</h1>
+
+        <h2>Baixe o APP Grátis</h2>
+        <p>Baixe Agora o AgriControle!
+            Simplifique a gestão financeira da sua produção de hortaliças com o AgriControle, nosso aplicativo gratuito e intuitivo. Escaneie o QR Code ao lado para baixar o aplicativo diretamente no seu dispositivo Android.
+            Organize suas finanças e potencialize seus resultados com a praticidade que você merece!
+        </p>
+
+        <button type="submit" class="playstore__btn">Baixe pela GooglePlay</button>
+        <button type="submit" class="appstore__btn">Baixe pela App Store</button>
+    </section>
+
+    <footer class="footer__contato">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h3 class="footer__info-title">Contato</h3>
+                <p><strong>Email:</strong> agricontroleutfpr@gmail.com </p>
+                <p><strong>Telefone:</strong> +55 (45) 3080-1800 </p>
+                <p><strong>Endereço:</strong> Prolongamento da Rua Cerejeira, s/n Bairro - São Luiz, Santa Helena - PR,
+                    85892-000</p>
+            </div>
+
+            <div class="footer__social">
+                <h3 class="footer__social-title">Siga-nos</h3>
+                <a href="https://www.facebook.com/profile.php?id=61569344994088" target="_blank"
+                    class="footer__social-link">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                |
+                <a href="https://www.instagram.com/agricontrole/" target="_blank" class="footer__social-link">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                |
+                <a href="https://twitter.com" target="_blank" class="footer__social-link">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
+
+            <div class="footer__credits">
+                <p>&copy; 2024 AgriControle. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* -------------------------------------------
+   SEÇÃO EQUIPE
+-------------------------------------------- */
+.seção-equipe {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1200px; /* Ajuste para um máximo de largura */
+    min-height: 600px; /* Garantir uma altura mínima */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.seção-equipe h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 33px;
+    color: rgba(97, 153, 85, 1);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.seção-equipe h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: rgba(97, 153, 85, 1);
+    margin-bottom: 15px;
+    padding: 30px 30px;
+    text-align: left;
+    text-transform: uppercase;
+    border-left: 6px solid rgba(56, 105, 46, 1);
+    margin-bottom: 3px;
+}
+
+/* Estilos para os membros da equipe */
+.equipe-membros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alinha os membros em uma linha */
+    gap: 20px;
+}
+
+.orientador {
+    text-align: center;
+    margin: 9px;
+    max-width: 350px;
+    flex: 1 1 calc(25% - 40px);
+    background-color: #f9f9f9;
+    padding: 30px 15px; /* Reduzido o padding para otimizar o espaço */
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Adiciona animação */
+    margin-bottom: 60px;
+}
+
+.orientador img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid rgba(56, 105, 46, 1);
+    object-fit: cover; /* Garantir que a imagem não distorça */
+}
+
+.orientador p {
+    font-family: 'Inter', sans-serif;
+    margin-top: 12px;
+    font-size: 1em;
+    color: rgba(102, 102, 100, 1);
+    text-align: justify;
+    font-size: 15px;
+}
+
+.orientador p strong {
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    color: rgba(97, 153, 85, 1);
+}
+
+/* Efeito de hover nos membros da equipe */
+.orientador:hover {
+    transform: translateY(-10px); /* Levanta o membro ao passar o mouse */
+}
+
+
+/*
+--------------------------------------------------
+Estilo geral para a div que contém os integrantes
+--------------------------------------------------
+*/
+
+/* Estilo para cada artigo (integrante) */
+.integrante {
+    font-family: 'Inter' , sans-serif;
+    text-align: center; /* Centraliza o texto dentro de cada artigo */
+    background-color: #f9f9f9; /* Fundo claro para os artigos */
+    padding: 30px 15px; /* Espaço interno para cada artigo */
+    border-radius: 9px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor dos artigos */
+    width: 22%; /* Define uma largura para que fiquem em linha, mas podem ajustar-se */
+    min-width: 200px; /* Evita que os artigos fiquem muito estreitos em telas pequenas */
+    margin-bottom: 21px; /* Espaço entre as linhas */
+    transition: transform 0.3s ease; /* Adiciona animação */
+}
+
+.integrante p strong{
+    font-size: 21px;
+    color: rgba(97, 153, 85, 1);
+}
+
+
+.integrante p{
+    font-size: 15px;
+    color: rgba(102, 102, 100, 1);
+}
+/* Estilo para as imagens */
+.integrante img {
+    width: 100%; /* A imagem ocupa toda a largura do artigo */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Garante que a imagem não distorça */
+    margin-bottom: 15px; /* Espaço abaixo da imagem */
+    border: 4px solid rgba(56, 105, 46, 1);
+}
+
+.integrante:hover {
+    transform: translateY(-10px); /* Levanta o membro ao passar o mouse */
+}
+
+.integrantesPesquisa {
+    display: flex; /* Exibe os artigos em linha */
+    justify-content: space-between; /* Distribui os artigos com espaçamento entre eles */
+    gap: 21px; /* Adiciona um espaço entre os artigos */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas se necessário */
+    padding: 30px 15px; /* Adiciona um pouco de espaço interno */
+    object-fit: cover; /* Garantir que a imagem não distorça */
+    margin-bottom: 30px;
+}
+
+.integrantesDev {
+    display: flex; /* Exibe os artigos em linha */
+    justify-content: space-between; /* Distribui os artigos com espaçamento entre eles */
+    gap: 21px; /* Adiciona um espaço entre os artigos */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas se necessário */
+    padding: 30px 15px; /* Adiciona um pouco de espaço interno */
+    object-fit: cover; /* Garantir que a imagem não distorça */
+    margin-bottom: 30px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .integrante {
+        width: 45%; /* Dois integrantes por linha em telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    .integrante {
+        width: 100%; /* Um integrante por linha em telas pequenas */
+    }
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .orientador {
+        flex: 1 1 calc(50% - 20px); /* 2 por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .orientador {
+        flex: 1 1 100%; /* 1 por linha em telas pequenas */
+    }
+
+    /* Ajustar o título na versão mobile */
+    .seção-equipe h1 {
+        font-size: 28px;
+    }
+
+    .seção-equipe h2 {
+        font-size: 20px;
+    }
+}

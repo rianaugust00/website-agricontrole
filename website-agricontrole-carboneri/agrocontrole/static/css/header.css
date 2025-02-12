@@ -1,0 +1,104 @@
+/* -------------------------------------------
+   ESTILOS DO CABEÇALHO (com BEM)
+-------------------------------------------- */
+.header {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff; /* Cor do fundo */
+    color: #38692E; /* Cor do texto */
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Z-index para sobrepor o conteúdo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar o cabeçalho */
+    width: 100%;
+}
+
+.header__content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adicionando espaçamento nas laterais */
+}
+
+/* Media Query para dispositivos menores */
+@media (max-width: 768px) {
+    .header__content {
+        flex-direction: column; /* Torna os itens empilhados em telas pequenas */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img {
+    width: 160px;
+    max-width: 100%; /* Garante que a logo não ultrapasse o espaço disponível */
+    height: auto;
+    margin-right: 10px;
+}
+
+.header__nav-list {
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header__nav-item {
+    display: inline-flex; /* Ajuste para garantir que os itens fiquem alinhados */
+}
+
+.header__nav-link {
+    color: rgba(56, 105, 46, 1);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header__nav-link:hover {
+    color: #ebf08c; /* Cor de destaque ao passar o mouse */
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .header__nav-list {
+        gap: 15px; /* Diminui o espaço entre os links em telas menores */
+    }
+}
+
+/* Estilo do botão de Login */
+.header__nav-link--login {
+    background-color: #853A10;
+    border-color: #632807;
+    border:2px solid #632807;
+    color: #ffffff;
+    padding: 5px 40px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.header__nav-link--login:hover {
+    background-color: #632807; /* Tom mais escuro quando passa o mouse */
+    transform: scale(1.05); /* Efeito de aumentar o botão */
+}
+
+/* Ajustando o tamanho do botão em telas menores */
+@media (max-width: 768px) {
+    .header__nav-link--login {
+        padding: 8px 30px; /* Reduz o padding em telas pequenas */
+    }
+}

@@ -1,0 +1,195 @@
+/* -------------------------------------------
+   RESET DE ESTILOS GERAIS
+-------------------------------------------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Geral para a página de registro */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------------------------
+   ESTILOS DA PÁGINA REGISTRAR
+-------------------------------------------- */
+body.registrar {
+    font-family: 'Nunito', sans-serif;
+    background: url('../imagens/FramesAndLogo/loginfundo.jpg') no-repeat center center fixed; /* Fundo da imagem */
+    background-size: cover; /* Redimensiona para cobrir a tela */
+    color: #38692E; /* Cor do texto */
+    justify-content: center; /* Centraliza o conteúdo */
+    min-height: 100vh;
+    position: relative;
+    padding-top: 80px; /* Compensar a altura do header fixo */
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px; /* Ajuste conforme necessário */
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.registrar__imagem {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-bottom: 20px; /* Espaço entre a imagem e o título */
+}
+
+.registrar__imagem img {
+    max-width: 210px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+/* Ajuste na seção principal de registro */
+.registrar__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Ajuste para evitar scroll desnecessário */
+    padding: 20px;
+    margin-top: 80px; /* Ajuste conforme necessário */
+    margin-bottom: 30px;
+}
+
+.registrar__container {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    padding: 30px; /* Aumentar padding interno */
+    max-width: 400px; /* Limitar largura máxima */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.registrar__form-container {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 5px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.registrar__form-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #238c31;
+    text-align: center; 
+}
+
+.registrar__form {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.registrar__form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #238c31;
+}
+
+.registrar__form-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #238c31;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.registrar__form-input:focus {
+    border-color: #3bff55; 
+}
+
+/* Botão do formulário */
+.registrar__form-btn {
+    padding: 12px;
+    background-color: #7fbf7f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+.registrar__form-btn:hover {
+    background-color: #7fbf7f;
+    color: #38692E;
+    transform: scale(1.05);
+}
+
+/* -------------------------------------------
+   ESTILOS RESPONSIVOS
+-------------------------------------------- */
+@media (max-width: 1024px) {
+    .registrar__container {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .registrar__container {
+        max-width: 95%;
+        padding: 20px; /* Reduz o espaçamento interno */
+    }
+
+    .registrar__section {
+        margin-top: 6rem; /* Espaço extra para o header fixo */
+        min-height: calc(100vh - 80px); /* Ajuste para evitar scroll desnecessário */
+    }
+}
+
+@media (max-width: 480px) {
+    .registrar__container {
+        max-width: 95%;
+        padding: 15px; /* Reduz o espaçamento interno */
+    }
+
+    .registrar__form-title {
+        font-size: 20px;
+    }
+
+    .registrar__form-label {
+        font-size: 12px;
+    }
+
+    .registrar__form-input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .registrar__form-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .registrar__section {
+        margin-top: 8rem; /* Espaço extra para o header fixo */
+        min-height: calc(100vh - 80px); /* Ajuste para evitar scroll desnecessário */
+    }
+}

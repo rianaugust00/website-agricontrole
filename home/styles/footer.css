@@ -45,7 +45,7 @@
 }
 
 /* Estado de hover para os links das redes sociais */
-.footer__social-link--hover {
+.footer__social-link:hover {
     text-decoration: underline;
     color: #fff; /* Altera a cor ao passar o mouse */
 }
@@ -58,6 +58,45 @@
     line-height: 1.5; /* Melhorando o espaçamento entre as linhas */
 }
 
+/* Estilo para a seção de redes sociais */
+.footer__social {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 20px;
+    font-size: 16px; /* Tamanho da fonte para texto */
+}
+
+/* Estilo para os links sociais */
+.footer__social-link {
+    display: inline-flex; /* Flex para alinhar ícone e texto */
+    align-items: center; /* Alinha ícone e texto verticalmente */
+    text-decoration: none; /* Remove sublinhado */
+    color: #ebf08c; /* Cor padrão */
+    margin: 0 10px; /* Espaçamento horizontal */
+    transition: color 0.3s ease; /* Efeito de hover */
+}
+
+/* Ícones de redes sociais */
+.footer__social-link i {
+    font-size: 20px; /* Tamanho do ícone */
+    margin-right: 8px; /* Espaço entre ícone e texto */
+    color: #ebf08c; /* Cor inicial dos ícones */
+}
+
+/* Efeito ao passar o mouse nos links */
+.footer__social-link:hover {
+    color: #fff; /* Altera a cor do texto */
+}
+
+.footer__social-link:hover i {
+    color: #fff; /* Altera a cor do ícone */
+}
+
+/* Links separadores (pipes) */
+.footer__social-link + span {
+    color: #ebf08c; /* Cor do separador */
+    margin: 0 5px; /* Espaçamento para o separador */
+}
+
 /* Modificadores para layouts responsivos */
 @media (max-width: 768px) {
     .footer__container {
@@ -66,6 +105,37 @@
     }
 
     .footer__info, .footer__social, .footer__credits {
-        margin: 20px 0; /* Aumentando o espaçamento entre as seções */
+        margin: 10px 0; /* Aumentando o espaçamento entre as seções */
+    }
+}
+
+/* Modificadores para telas menores */
+@media (max-width: 480px) {
+    .footer__contato {
+        padding: 10px 0; /* Reduzir padding para diminuir a altura */
+    }
+
+    .footer__info, .footer__social, .footer__credits {
+        margin: 2px 0; /* Reduzir a distância entre as divs */
+    }
+
+    .footer__info-title, .footer__social-title {
+        font-size: 16px; /* Reduzir tamanho da fonte */
+    }
+
+    .footer__credits {
+        font-size: 12px; /* Reduzir tamanho da fonte */
+    }
+
+    .footer__social {
+        font-size: 14px; /* Reduzir tamanho da fonte */
+    }
+
+    .footer__social-link {
+        font-size: 14px; /* Reduzir tamanho da fonte */
+    }
+
+    .footer__social-link i {
+        font-size: 16px; /* Reduzir tamanho do ícone */
     }
 }

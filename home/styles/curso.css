@@ -1,0 +1,82 @@
+/* -------------------------------------------
+   SEÇÃO CURSO
+-------------------------------------------- */
+.seção-curso {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1200px; /* Ajuste para um máximo de largura */
+    min-height: 600px; /* Garantir uma altura mínima */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.seção-curso h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 33px;
+    color: rgba(97, 153, 85, 1);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.seção-curso h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: rgba(97, 153, 85, 1);
+    margin-bottom: 15px;
+    padding: 30px 30px;
+    text-align: left;
+    text-transform: uppercase;
+    border-left: 6px solid rgba(56, 105, 46, 1);
+    margin-bottom: 3px;
+}
+
+.seção-curso p {
+    padding-top: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.seção-curso button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: rgba(56, 105, 46, 1);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.seção-curso button:hover {
+    background-color: rgba(97, 153, 85, 1);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .seção-curso {
+        padding: 30px 15px;
+    }
+
+    .seção-curso h1 {
+        font-size: 28px;
+    }
+
+    .seção-curso h2 {
+        font-size: 22px;
+        padding: 20px 20px;
+    }
+
+    .seção-curso p {
+        font-size: 16px;
+    }
+
+    .seção-curso button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}

@@ -1,15 +1,4 @@
-/* Geral para a página de login */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-/* -------------------------------------------
-   RESET DE ESTILOS GERAIS
--------------------------------------------- */
+/* Reset */
 *,
 *::before,
 *::after {
@@ -18,67 +7,164 @@ html, body {
     box-sizing: border-box;
 }
 
-/* -------------------------------------------
-   ESTILOS GERAIS (fonte, cor de fundo, etc)
--------------------------------------------- */
-.page {
-    font-family: 'Nunito', sans-serif;
-    /* Usando a fonte importada do Google Fonts */
-    background-color: #f9f9f9;
-    /* Cor de fundo do corpo */
-    line-height: 1.6;
-    /* Aumentando o espaçamento entre linhas para melhor legibilidade */
-    color: #333;
-    /* Cor de texto mais suave que o preto */
-    font-size: 16px;
-    /* Tamanho de fonte padrão */
+/* Geral para a página de login */
+html,
+body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Usando a estrutura BEM para o body */
-.page__body {
-    background-color: #f9f9f9;
-    /* Cor de fundo do corpo */
-    color: #333;
-    /* Cor de texto mais suave que o preto */
-    font-size: 16px;
-    /* Tamanho de fonte padrão */
-    line-height: 1.6;
+/* Estilos da Página Login */
+body.login {
+    font-family: 'Nunito', sans-serif;
+    background: url('../imagens/FramesAndLogo/loginfundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Exemplo de uso de um modificador para "escuro", por exemplo */
-.page__body--dark {
-    background-color: #333;
-    color: #fff;
-}
-
-.login__imagem {
-    width: 100%;
+/* Sessão principal do login */
+.login__section {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: calc(100vh - 10px);
+    margin-top: 2%;
+    padding: 1%;
 }
 
-.login__imagem-img {
+/* Container do login */
+.login__container {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    max-width: 400px;
+    min-height: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: auto;
+}
+
+/* Imagem do formulário */
+.login__imagem-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.login__imagem-form img {
+    max-width: 210px;
     height: auto;
 }
 
-.login__section-imagem-title {
-    font-size: 32px;
-    font-weight: bold;
-    z-index: 1;
+/* Container do Formulário */
+.login__form-container {
+    flex: 1;
+    padding: 45px;
+    display: flex;
+    min-height: 400px;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .header__nav-list {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Título do Formulário */
+.login__form-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #238c31;
+}
 
-    .footer__container {
-        padding: 0 10px;
+/* Estilo do Formulário */
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login__form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #238c31;
+}
+
+.login__form-input {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #238c31;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.login__form-input:focus {
+    border-color: #3bff55;
+}
+
+/* Botão do Formulário */
+.login__form-btn {
+    padding: 12px;
+    background-color: #006eff88;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login__form-btn:hover {
+    background-color: #006eff6b;
+    color: #0042c78e;
+    transform: scale(1.05);
+}
+
+/* Responsividade para telas médias */
+@media (max-width: 768px) {
+    .login__container {
+        max-width: 95%;
+        padding: 0.94rem; /* 15px */
+    }
+    .login__imagem-form img {
+        max-width: 11.25rem; /* 180px */
+    }
+    .login__form-title {
+        font-size: 1.25rem; /* 20px */
+    }
+    .login__form-btn {
+        font-size: 0.94rem; /* 15px */
+        padding: 0.625rem; /* 10px */
+    }
+}
+
+/* Responsividade para telas pequenas (modo celular) */
+@media (max-width: 480px) {
+    /* Garantir que o header não corte o formulário */
+    .login__section {
+        margin-top: 4rem; /* Espaço extra para o header fixo */
+    }
+    .login__container {
+        max-width: 95%;
+        padding: 0.625rem; /* 10px, convertido para rem se desejado */
+    }
+    .login__imagem-form img {
+        max-width: 8.125rem; /* 130px */
+    }
+    .login__form-title {
+        font-size: 1.125rem; /* 18px */
+    }
+    .login__form-btn {
+        font-size: 0.875rem; /* 14px */
     }
 }

@@ -1,0 +1,148 @@
+/* -------------------------------------------
+   SEÇÃO FERRAMENTAS
+-------------------------------------------- */
+.seção-ferramenta {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1200px; /* Ajuste para um máximo de largura */
+    min-height: 600px; /* Garantir uma altura mínima */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.seção-ferramenta h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 33px;
+    color: rgba(97, 153, 85, 1);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.seção-ferramenta h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: rgba(97, 153, 85, 1);
+    margin-bottom: 15px;
+    padding: 30px 30px;
+    text-align: left;
+    text-transform: uppercase;
+    border-left: 6px solid rgba(56, 105, 46, 1);
+    margin-bottom: 3px;
+}
+
+/* Estilos para o container de ferramentas */
+.conteiner-ferramentas {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.conteiner-ferramentas ul {
+    list-style: disc;
+    padding-left: 45px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 27px;
+    color: #666664;
+    text-align: left;
+    margin:  30px;
+}
+
+.conteiner-ferramentas ul li::marker {
+    color: rgba(56, 105, 46, 1); /* Altere a cor conforme necessário */
+    font-size: 1.2em; /* Opcional: Ajuste o tamanho do marcador */
+}
+
+.conteiner-ferramentas ul li {
+    margin-bottom: 60px;
+}
+
+.img-container {
+    flex: 1;
+    text-align: center;
+}
+
+.img-container img {
+    max-width: 38%;
+    height:auto;
+    border-radius: 3px;
+    object-fit: cover;
+    position: relative;
+    top: -15px;
+}
+
+/* Estilos para o container de relatórios */
+.relatorio-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.relatorio-container img {
+    max-width: 23%;
+    height:auto;
+    border-radius: 3px;
+    object-fit: cover;
+    position: relative;
+    top: -15px;
+}
+
+.relatorio-container ul {
+    order: 1; /* Define o UL para vir primeiro */
+    flex: 1; /* Permite que o UL ocupe o espaço necessário */
+    list-style: disc;
+    padding-left: 45px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 27px;
+    color: #666664;
+    text-align: left;
+    margin: 0 100px;
+}
+
+.relatorio-container ul li {
+    margin-bottom: 60px;
+}
+
+.relatorio-container ul li::marker {
+    color: rgba(56, 105, 46, 1); /* Altere a cor conforme necessário */
+    font-size: 1.2em; /* Opcional: Ajuste o tamanho do marcador */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .conteiner-ferramentas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteiner-ferramentas ul {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .img-container img {
+        max-width: 80%;
+    }
+
+    .relatorio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .relatorio-container ul {
+        text-align: center;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .relatorio-container img {
+        max-width: 80%;
+    }
+}
+

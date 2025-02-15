@@ -2,52 +2,147 @@
    SEÇÃO COM IMAGEM DE FUNDO
 -------------------------------------------- */
 
-.seção-imagem {
-    height: 510px;
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), /* Sobreposição escura */
-        url('../imagens/FramesAndLogo/fundoHome.jpg'); /* Imagem de fundo */
+.secao-imagem {
+    background: linear-gradient(rgba(67, 255, 76, 0.362), rgba(0, 0, 0, 0.3)), 
+                url('../imagens/FramesAndLogo/fundoHome.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 500px; /* Ajuste para aumentar ou diminuir a altura */
     display: flex;
-    justify-content:center;
+    flex-direction: column; /* Mantém o texto empilhado */
     align-items: center;
-    color: #ffffff;
+    justify-content: center;
     text-align: center;
-    flex-direction: column; /* Movido para dentro do bloco principal */
+    padding: 50px 20px;
+    color: #ffffff;
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px; /* Ajuste conforme necessário */
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para o título h2 */
-.seção-imagem h2 {
-    font-family: 'Inter' , sans-serif;
-    font-size: 36px; 
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+.secao-imagem h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 45px; /* Texto grande */
+    font-weight: bold; /* Negrito */
+    color: #ffffff !important;
+    text-shadow: 5px 5px 7px rgb(0, 0, 0); /* Adiciona sombra no texto */
+    margin-bottom: 20px;
 }
 
-/* Estilo para o parágrafo */
-.seção-imagem p {
-    font-family: 'Inter' , sans-serif;
-    font-size: 22px;
-    margin-top: 10px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
-    line-height: 1.6;
-    max-width: 1000px;
+.secao-imagem p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 23px; /* Aumenta o tamanho do texto */
+    font-weight: bold; /* Deixa o parágrafo em negrito */
+    text-shadow: 5px 5px 7px rgb(0, 0, 0); /* Adiciona sombra */
+    max-width: 1100px; /* Aumenta a largura do texto */
+    margin: 0 auto;
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
+    text-align: center; /* Centraliza o texto */
 }
 
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
     .seção-imagem {
-        height: 350px; /* Altura reduzida em telas pequenas */
+        padding: 30px 15px;
     }
 
     .seção-imagem h2 {
-        font-size: 28px; /* Tamanho do título reduzido */
+        font-size: 28px;
     }
 
     .seção-imagem p {
-        font-size: 16px; /* Tamanho do texto ajustado */
-        padding: 0 15px; /* Adiciona padding nas laterais para melhor leitura */
+        font-size: 16px;
+    }
+}
+
+/* -------------------------------------------
+   SEÇÃO GERAL
+-------------------------------------------- */
+.seção {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1200px;
+    min-height: 600px;
+    margin: 0 auto;
+}
+
+.seção h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 33px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.seção h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    padding: 30px 30px;
+    text-align: left;
+    text-transform: uppercase;
+    border-left: 6px solid rgba(56, 105, 46, 1);
+    margin-bottom: 3px;
+}
+
+.seção p {
+    padding-top: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.seção button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: rgba(56, 105, 46, 1);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.seção button:hover {
+    background-color: rgba(97, 153, 85, 1);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .seção {
+        padding: 30px 15px;
+    }
+
+    .seção h1 {
+        font-size: 28px;
+    }
+
+    .seção h2 {
+        font-size: 22px;
+        padding: 20px 20px;
+    }
+
+    .seção p {
+        font-size: 16px;
+    }
+
+    .seção button {
+        font-size: 16px;
+        padding: 8px 16px;
     }
 }

@@ -43,3 +43,371 @@
     background-color: #333;
     color: #fff;
 }
+
+/* -------------------------------------------
+   ESTILOS GERAIS PARA O MAIN
+-------------------------------------------- */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    padding-top: 80px; /* Compensar a altura do header fixo */
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para os títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    color: rgba(56, 105, 46, 1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 33px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+/* Estilos para os parágrafos */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os botões */
+button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: rgba(56, 105, 46, 1);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(97, 153, 85, 1);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 1024px) {
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .header {
+        padding: 5px 20px; /* Reduzir padding para diminuir a altura */
+    }
+
+    .header__content {
+        flex-direction: column; /* Torna os itens empilhados em telas pequenas */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    .header__nav {
+        display: none; /* Esconde o menu padrão */
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff; /* ou a cor de fundo do seu header */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header__nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header__nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__nav-link {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .header__nav--open {
+        display: flex; /* Mostra o menu quando aberto */
+    }
+
+    .header__menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: #38692E;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: auto;
+        margin-top: 10px; /* Ajuste a posição do botão hamburger */
+    }
+
+    .header__nav-link--login, .header__nav-link--register {
+        padding: 12px 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .header {
+        padding: 5px 20px; /* Reduzir padding para diminuir a altura */
+    }
+
+    .header__content {
+        flex-direction: column; /* Torna os itens empilhados em telas pequenas */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    .header__nav {
+        display: none; /* Esconde o menu padrão */
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff; /* ou a cor de fundo do seu header */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header__nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header__nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__nav-link {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .header__nav--open {
+        display: flex; /* Mostra o menu quando aberto */
+    }
+
+    .header__menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: #38692E;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: auto;
+        margin-top: 10px; /* Ajuste a posição do botão hamburger */
+    }
+
+    .header__nav-link--login, .header__nav-link--register {
+        padding: 12px 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .header {
+        padding: 5px 20px; /* Reduzir padding para diminuir a altura */
+    }
+
+    .header__content {
+        flex-direction: column; /* Torna os itens empilhados em telas pequenas */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    .header__nav {
+        display: none; /* Esconde o menu padrão */
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff; /* ou a cor de fundo do seu header */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header__nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header__nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__nav-link {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .header__nav--open {
+        display: flex; /* Mostra o menu quando aberto */
+    }
+
+    .header__menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: #38692E;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: auto;
+        margin-top: 10px; /* Ajuste a posição do botão hamburger */
+    }
+
+    .header__nav-link--login, .header__nav-link--register {
+        padding: 10px 30px;
+    }
+}

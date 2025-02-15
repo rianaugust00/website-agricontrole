@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AgriControle</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -27,8 +27,12 @@
                 </a>
                 <h1 class="header__logo-title"></h1>
             </div>
+            <button class="header__menu-toggle" id="menuToggle">
+                ☰
+            </button>
             <nav class="header__nav">
                 <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Início</a></li>
                     <li class="header__nav-item"><a href="#ferramenta" class="header__nav-link">Ferramenta</a></li>
                     <li class="header__nav-item"><a href="#curso" class="header__nav-link">Curso</a></li>
                     <li class="header__nav-item"><a href="#equipe" class="header__nav-link">Equipe</a></li>
@@ -43,12 +47,16 @@
     </header>
 
 
-    <div class="seção-imagem">
-        <h2>Bem-vindo ao AgriControle</h2>
-        <p>O projeto AgriControle visa capacitar agricultores familiares do Paraná na gestão financeira de suas
-            propriedades, utilizando metodologias ativas e ferramentas digitais acessíveis. O objetivo é fortalecer a
-            tomada de decisão financeira, promover a inclusão digital e melhorar a sustentabilidade econômica das
-            pequenas propriedades rurais.</p>
+    <div class="secao-imagem">
+        <div class="container">
+            <h2>Bem-vindo ao AgriControle</h2>
+            <p>
+                O projeto AgriControle visa capacitar agricultores familiares do Paraná na gestão financeira de suas 
+                propriedades, utilizando metodologias ativas e ferramentas digitais acessíveis. O objetivo é fortalecer a 
+                tomada de decisão financeira, promover a inclusão digital e melhorar a sustentabilidade econômica das 
+                pequenas propriedades rurais.
+            </p>
+        </div>
     </div>
 
     <!--Seção de Ferramenta-->
@@ -65,16 +73,16 @@
                 <li>Emissão De Relatórios</li>
             </ul>
             <div class="img-container">
-                <img src="imagens/FramesAndLogo/mockup.png" alt="Imagem ilustrativa de ferramentas">
+                <img src="imagens/FramesAndLogo/MockUpFerramentaCerto.jpg" alt="Imagem ilustrativa de ferramentas">
             </div>
         </div>
     
         <h1>Relatórios</h1>
     
         <h2>Tenha uma visão clara do que está acontecendo.</h2>
-    
+        <br> <br>
         <div class="relatorio-container">
-            <img src="imagens/FramesAndLogo/relatorio.png" alt="Gráfico em um laptop" class="imgrelatorio">
+            <img src="imagens/FramesAndLogo/MockUpRelatorioCerto.jpeg" alt="Celular Com Relatorio" class="imgrelatorio">
             <ul>
                 <li>Informações detalhadas sobre compras, vendas, gastos e indicadores financeiros.</li>
                 <li>Personalização do período e seleção de dados específicos.</li>
@@ -92,7 +100,6 @@
             Com ele, você aprenderá a monitorar suas finanças, prever entradas e saídas de dinheiro, e a tomar decisões estratégicas para o crescimento sustentável da sua propriedade.
             Exploraremos ferramentas práticas e exemplos reais, para demonstrar como um controle efetivo do fluxo de caixa pode trazer mais segurança e estabilidade ao seu negócio agrícola.
         </p>
-        
         <button id="btn-inscrever" class="botao-inscricao">Inscreva-se agora</button>
     </section>
     
@@ -170,43 +177,41 @@
                 <p>Estudante de Agronomia na UTFPR – Campus Santa Helena, Isadora atua na aplicação do treinamento financeiro e na disseminação das metodologias ativas, capacitando agricultores para uma gestão mais eficiente.</p>
             </article>
         </div>
+                <h2>Integrantes da equipe de desenvolvimento</h2>
+                <div class="integrantesDev">
+                    <article class="integrante">
+                        <img src="imagens/Equipe/DevRian.jpg" alt="Foto de Rian Augusto">
+                        <p><strong>Rian Augusto</strong></p>
+                        <p>Desenvolvedor Front-End e Estudante do curso de Ciência da Computação pela UTFPR do campus Santa-Helena.</p>
+                    </article>
+        
+                    <article class="integrante">
+                        <img src="imagens/Equipe/DevKaizer.jpg" alt="Foto de Eduardo Kaizer">
+                        <p><strong>Eduardo Kaizer</strong></p>
+                        <p>Desenvolvedor Mobile e Estudante do curso de Ciência da Computação pela UTFPR do campus Santa-Helena.</p>
+                    </article>
+        
+                    <article class="integrante">
+                        <img src="imagens/Equipe/DavCarboneri.jpg" alt="Foto de Gabriel Carboneri">
+                        <p><strong>Gabriel Carboneri</strong></p>
+                        <p>Desenvolvedor Back-End e Estudante do curso de Ciência da Computação pela UTFPR do campus Santa-Helena.</p>
+                    </article>
 
-        <!-- Adicionar membros da equipe de desenvolvimento aqui -->
+                    <article class="integrante">
+                        <img src="imagens/Equipe/DevJoao.jpg" alt="Foto de João Pedro">
+                        <p><strong>João Pedro</strong></p>
+                        <p>Desenvolvedor Front-End, Mobile e Estudante do curso de Ciência da computação pela UTFPR do campus Santa-Helena.</p>
+                    </article>
 
-        <h2>Integrantes da equipe de desenvolvimento</h2>
-
-        <div class="integrantesDev">
-            <!-- Integrante 1 -->
-            <article class="integrante">
-                <img src="imagens/Equipe/DevRian.jpg" alt="Foto de Rian Augusto">
-                <p><strong>Rian Augusto</strong></p>
-                <p>Desenvolvedor Front-End e Estudante do curso de Ciência da Computação pela UTFPR do campusa Santa
-                    Helena.</p>
-            </article>
-
-            <!-- Integrante 2 -->
-            <article class="integrante">
-                <img src="imagens/Equipe/DevKaizer.jpg" alt="Foto de Eduardo Kaizer">
-                <p><strong>Eduardo Kaizer</strong></p>
-                <p>Desenvolvedor Mobile e Estudante do curso de Ciência da Computação pela UTFPR do campusa Santa
-                    Helena.</p>
-            </article>
-
-            <!-- Integrante 3 -->
-            <article class="integrante">
-                <img src="imagens/Equipe/DavCarboneri.jpg" alt="Foto de Gabriel Carboneri">
-                <p><strong>Gabriel Carboneri</strong></p>
-                <p>Desenvolvedor Back-End e Estudante do curso de Ciência da Computação pela UTFPR do campusa Santa
-                    Helena.</p>
-            </article>
-
-            <!-- Integrante 4 -->
-            <article class="integrante">
-                <img src="imagens/Equipe/DevDanilo.jpg" alt="Foto de Danilo Bruno">
-                <p><strong>Danilo Bruno</strong></p>
-                <p>Desingner, Desenvolvedor Front-End e Estudante do curso de Análise e Desenvolvimento de Sistemas pela UTFPR do
-                    campusa Cornélio Procópio.</p>
-            </article>
+                    <article class="integrante">
+                        <img src="imagens/Equipe/DevDanilo.jpg" alt="Foto de Danilo Bruno">
+                        <p><strong>Danilo Bruno</strong></p>
+                        <p>Designer, Desenvolvedor Front-End e Estudante do curso de Análise e Desenvolvimento de Sistemas pela UTFPR do campus Cornélio Procópio.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        
         </div>
     </section>
 
@@ -248,12 +253,12 @@
                     <i class="fab fa-twitter"></i> Twitter
                 </a>
             </div>
-
             <div class="footer__credits">
                 <p>&copy; 2024 AgriControle. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>

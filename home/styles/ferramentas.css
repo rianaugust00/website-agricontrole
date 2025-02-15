@@ -64,9 +64,8 @@
     text-align: center;
 }
 
-
 .img-container img {
-    max-width: 42%;
+    max-width: 38%;
     height:auto;
     border-radius: 3px;
     object-fit: cover;
@@ -74,19 +73,19 @@
     top: -15px;
 }
 
-
 /* Estilos para o container de relatórios */
 .relatorio-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    margin-left: 10%;
     align-items: center;
 }
 
 .relatorio-container img {
-    max-width: 42%;
+    max-width: 23%;
     height:auto;
     border-radius: 3px;
     object-fit: cover;
@@ -106,8 +105,6 @@
     margin: 0 100px;
 }
 
-
-
 .relatorio-container ul li {
     margin-bottom: 60px;
 }
@@ -117,25 +114,35 @@
     font-size: 1.2em; /* Opcional: Ajuste o tamanho do marcador */
 }
 
-
 /* Ajuste para telas menores */
 @media (max-width: 768px) {
+    .conteiner-ferramentas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteiner-ferramentas ul {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .img-container img {
+        max-width: 80%;
+    }
+
     .relatorio-container {
         flex-direction: column;
         align-items: center;
     }
 
     .relatorio-container ul {
-        order: 1;
         text-align: center;
-        flex: none;
-        width: 100%;
+        padding-left: 0;
+        margin: 0;
     }
 
     .relatorio-container img {
-        order: 2;
         max-width: 80%;
-        flex: none;
-        width: 100%;
     }
 }
+

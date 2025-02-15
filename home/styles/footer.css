@@ -45,7 +45,7 @@
 }
 
 /* Estado de hover para os links das redes sociais */
-.footer__social-link--hover {
+.footer__social-link:hover {
     text-decoration: underline;
     color: #fff; /* Altera a cor ao passar o mouse */
 }
@@ -105,6 +105,37 @@
     }
 
     .footer__info, .footer__social, .footer__credits {
-        margin: 20px 0; /* Aumentando o espaçamento entre as seções */
+        margin: 10px 0; /* Aumentando o espaçamento entre as seções */
+    }
+}
+
+/* Modificadores para telas menores */
+@media (max-width: 480px) {
+    .footer__contato {
+        padding: 10px 0; /* Reduzir padding para diminuir a altura */
+    }
+
+    .footer__info, .footer__social, .footer__credits {
+        margin: 2px 0; /* Reduzir a distância entre as divs */
+    }
+
+    .footer__info-title, .footer__social-title {
+        font-size: 16px; /* Reduzir tamanho da fonte */
+    }
+
+    .footer__credits {
+        font-size: 12px; /* Reduzir tamanho da fonte */
+    }
+
+    .footer__social {
+        font-size: 14px; /* Reduzir tamanho da fonte */
+    }
+
+    .footer__social-link {
+        font-size: 14px; /* Reduzir tamanho da fonte */
+    }
+
+    .footer__social-link i {
+        font-size: 16px; /* Reduzir tamanho do ícone */
     }
 }

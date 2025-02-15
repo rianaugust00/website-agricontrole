@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <!-- Link para o CSS do cabeçalho -->
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/footer.css">
@@ -20,16 +19,18 @@
             <a href="index.html">
                 <img src="imagens/FramesAndLogo/hort.png" alt="Logo AgriControle" class="header__logo-img">
             </a>
+            <button class="header__menu-toggle" id="menuToggle">
+                ☰
+            </button>
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="#ferramenta" class="header__nav-link">Ferramenta</a></li>
-                    <li class="header__nav-item"><a href="#curso" class="header__nav-link">Curso</a></li>
-                    <li class="header__nav-item"><a href="#equipe" class="header__nav-link">Equipe</a></li>
-                    <li class="header__nav-item"><a href="#download" class="header__nav-link">Download</a></li>
-                    <li class="header__nav-item"><a href="login.html"
-                            class="header__nav-link header__nav-link--login">Login</a></li>
-                    <li class="header__nav-item"><a href="register.html"
-                            class="header__nav-link header__nav-link--register">Registrar-se</a></li>
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Início</a></li>
+                    <li class="header__nav-item"><a href="index.html#ferramenta" class="header__nav-link">Ferramenta</a></li>
+                    <li class="header__nav-item"><a href="index.html#curso" class="header__nav-link">Curso</a></li>
+                    <li class="header__nav-item"><a href="index.html#equipe" class="header__nav-link">Equipe</a></li>
+                    <li class="header__nav-item"><a href="index.html#download" class="header__nav-link">Download</a></li>
+                    <li class="header__nav-item"><a href="login.html" class="header__nav-link header__nav-link--login">Login</a></li>
+                    <li class="header__nav-item"><a href="register.html" class="header__nav-link header__nav-link--register">Registrar-se</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,21 +38,18 @@
 
     <section class="login__section">
         <div class="login__container">
-            <div class="login__imagem">
-                <!--img src="imagens/FramesAndLogo/loginfundo.jpg" alt="ImgFundoLogin" class="login__imagem-img"!-->
-            </div>
-            <!-- Primeiro Container Branco -->
             <div class="login__form-container">
-                <h2 class="login__form-title">Login</h2>
-            </div>
-            <!-- Segundo Container Branco com Formulário -->
-            <div class="login__form-container">
+                <h2 class="login__form-title">Login!</h2>
+                <div class="login__imagem-form">
+                    <img src="imagens/FramesAndLogo/hort.png" alt="Logo AgriControle">
+                </div>
+                
                 <form class="login__form">
                     <label for="email" class="login__form-label">Email</label>
-                    <input type="text" id="email" name="email" class="login__form-input" required>
+                    <input type="email" id="email" name="email" class="login__form-input" required>
 
-                    <label for="senha" class="login__form-label">Senha</label>
-                    <input type="senha" id="senha" name="senha" class="login__form-input" required>
+                    <password for="senha" class="login__form-label">Senha</password>
+                    <input type="password" id="senha" name="senha" class="login__form-input" required>
 
                     <button type="submit" class="login__form-btn">Entrar</button>
                 </form>
@@ -59,21 +57,18 @@
         </div>
     </section>
 
-
     <footer class="footer__contato">
         <div class="footer__container">
             <div class="footer__info">
                 <h3 class="footer__info-title">Contato</h3>
                 <p><strong>Email:</strong> agricontroleutfpr@gmail.com </p>
                 <p><strong>Telefone:</strong> +55 (45) 3080-1800 </p>
-                <p><strong>Endereço:</strong> Prolongamento da Rua Cerejeira, s/n Bairro - São Luiz, Santa Helena - PR,
-                    85892-000</p>
+                <p><strong>Endereço:</strong> Prolongamento da Rua Cerejeira, s/n Bairro - São Luiz, Santa Helena - PR, 85892-000</p>
             </div>
 
             <div class="footer__social">
                 <h3 class="footer__social-title">Siga-nos</h3>
-                <a href="https://www.facebook.com/profile.php?id=61569344994088" target="_blank"
-                    class="footer__social-link">
+                <a href="https://www.facebook.com/profile.php?id=61569344994088" target="_blank" class="footer__social-link">
                     <i class="fab fa-facebook-f"></i> Facebook
                 </a>
                 |
@@ -92,6 +87,7 @@
         </div>
     </footer>
 
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>

@@ -1,15 +1,4 @@
-/* Geral para a página de login */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-/* -------------------------------------------
-   RESET DE ESTILOS GERAIS
--------------------------------------------- */
+/* Reset */
 *,
 *::before,
 *::after {
@@ -18,26 +7,36 @@ html, body {
     box-sizing: border-box;
 }
 
-/* -------------------------------------------
-   ESTILOS DA PÁGINA LOGIN
--------------------------------------------- */
+/* Geral para a página de login */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos da Página Login */
 body.login {
     font-family: 'Nunito', sans-serif;
-    background: url('../imagens/FramesAndLogo/loginfundo.jpg') no-repeat center center fixed; /* Fundo da imagem */
-    background-size: cover; /* Redimensiona para cobrir a tela */
-    color: #fff;
-    justify-content: center;
+    background: url('../imagens/FramesAndLogo/loginfundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Sessão principal do login */
 .login__section {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Tela inteira */
-    padding: 20px;
-    backdrop-filter: blur(4px); /* Adiciona desfoque no fundo */
-    padding-top: 240px;
+    min-height: calc(100vh - 10px);
+    margin-top: 2%;
+    padding: 1%;
 }
 
 /* Container do login */
@@ -45,78 +44,127 @@ body.login {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 360px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com opacidade */
+    max-width: 400px;
+    min-height: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    margin: auto;
 }
 
-/* Container do formulário */
+/* Imagem do formulário */
+.login__imagem-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.login__imagem-form img {
+    max-width: 210px;
+    height: auto;
+}
+
+/* Container do Formulário */
 .login__form-container {
     flex: 1;
-    padding: 42px;
+    padding: 45px;
     display: flex;
+    min-height: 400px;
     flex-direction: column;
     justify-content: center;
 }
 
-/* Título do formulário */
+/* Título do Formulário */
 .login__form-title {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
-    color: #38692E; /* Verde para contraste */
-    
+    color: #238c31;
 }
 
-/* Estilo do formulário */
+/* Estilo do Formulário */
 .login__form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .login__form-label {
     font-size: 14px;
     font-weight: 600;
-    color: #34495e;
+    color: #238c31;
 }
 
 .login__form-input {
     padding: 12px;
     font-size: 14px;
-    border: 1px solid #ddd;
+    border: 1px solid #238c31;
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s ease;
 }
 
 .login__form-input:focus {
-    border-color: #38692E; /* Destaque no verde */
+    border-color: #3bff55;
 }
 
-/* Botão do formulário */
+/* Botão do Formulário */
 .login__form-btn {
     padding: 12px;
-    background-color: #853A10;
+    background-color: #006eff88;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
     border: none;
     border-radius: 5px;
+    margin-top: 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .login__form-btn:hover {
-    background-color: #632807;
+    background-color: #006eff6b;
+    color: #0042c78e;
+    transform: scale(1.05);
 }
 
-/* Estilos responsivos */
+/* Responsividade para telas médias */
 @media (max-width: 768px) {
     .login__container {
-        flex-direction: column; /* Alinha verticalmente em telas menores */
+        max-width: 95%;
+        padding: 0.94rem; /* 15px */
+    }
+    .login__imagem-form img {
+        max-width: 11.25rem; /* 180px */
+    }
+    .login__form-title {
+        font-size: 1.25rem; /* 20px */
+    }
+    .login__form-btn {
+        font-size: 0.94rem; /* 15px */
+        padding: 0.625rem; /* 10px */
+    }
+}
+
+/* Responsividade para telas pequenas (modo celular) */
+@media (max-width: 480px) {
+    /* Garantir que o header não corte o formulário */
+    .login__section {
+        margin-top: 4rem; /* Espaço extra para o header fixo */
+    }
+    .login__container {
+        max-width: 95%;
+        padding: 0.625rem; /* 10px, convertido para rem se desejado */
+    }
+    .login__imagem-form img {
+        max-width: 8.125rem; /* 130px */
+    }
+    .login__form-title {
+        font-size: 1.125rem; /* 18px */
+    }
+    .login__form-btn {
+        font-size: 0.875rem; /* 14px */
     }
 }

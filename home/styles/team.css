@@ -30,6 +30,15 @@
     margin-bottom: 3px;
 }
 
+.seção-equipe p {
+    padding-top: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
 /* Estilos para os membros da equipe */
 .equipe-membros {
     display: flex;
@@ -76,30 +85,29 @@
 
 /* Efeito de hover nos membros da equipe */
 .orientador:hover {
-    transform: translateY(-10px); /* Levanta o membro ao passar o mouse */
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
-
 
 /*
 --------------------------------------------------
 Estilo geral para a div que contém os integrantes
 --------------------------------------------------
 */
-
-/* Estilo para cada artigo (integrante) */
 .integrante {
     font-family: 'Inter' , sans-serif;
-    text-align: center; /* Centraliza o texto dentro de cada artigo */
-    background-color: #f9f9f9; /* Fundo claro para os artigos */
-    padding: 30px 15px; /* Espaço interno para cada artigo */
-    border-radius: 9px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor dos artigos */
-    width: 22%; /* Define uma largura para que fiquem em linha, mas podem ajustar-se */
-    min-width: 200px; /* Evita que os artigos fiquem muito estreitos em telas pequenas */
-    margin-bottom: 21px; /* Espaço entre as linhas */
-    transition: transform 0.3s ease; /* Adiciona animação */
+    text-align: center;
+    background-color: #f9f9f9; 
+    padding: 30px 15px; 
+    border-radius: 9px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 22%; 
+    min-width: 200px; 
+    margin-bottom: 21px;
+    transition: transform 0.3s ease; 
+    scroll-snap-align: start;
 }
-
+ 
 .integrante p strong{
     font-size: 21px;
     color: rgba(97, 153, 85, 1);
@@ -125,13 +133,12 @@ Estilo geral para a div que contém os integrantes
 }
 
 .integrantesPesquisa {
-    display: flex; /* Exibe os artigos em linha */
-    justify-content: space-between; /* Distribui os artigos com espaçamento entre eles */
-    gap: 21px; /* Adiciona um espaço entre os artigos */
-    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas se necessário */
-    padding: 30px 15px; /* Adiciona um pouco de espaço interno */
-    object-fit: cover; /* Garantir que a imagem não distorça */
-    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap; /* Mantém tudo em uma linha */
+    gap: 20px;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Esconde a barra de rolagem no Firefox */
 }
 
 .integrantesDev {
@@ -142,6 +149,41 @@ Estilo geral para a div que contém os integrantes
     padding: 30px 15px; /* Adiciona um pouco de espaço interno */
     object-fit: cover; /* Garantir que a imagem não distorça */
     margin-bottom: 30px;
+}
+
+/* Estilos para o container de membros da equipe */
+.equipe-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.equipe-container .membro {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+}
+
+.equipe-container .membro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.equipe-container .membro h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: rgba(56, 105, 46, 1);
+    margin-bottom: 10px;
+}
+
+.equipe-container .membro p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #666;
 }
 
 /* Ajuste para telas menores */
@@ -176,5 +218,16 @@ Estilo geral para a div que contém os integrantes
 
     .seção-equipe h2 {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .equipe-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .equipe-container .membro {
+        margin: 20px 0;
     }
 }

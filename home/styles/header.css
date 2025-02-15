@@ -1,6 +1,3 @@
-/* -------------------------------------------
-   ESTILOS DO CABEÇALHO (com BEM)
--------------------------------------------- */
 .header {
     font-family: 'Nunito', sans-serif;
     display: flex;
@@ -16,6 +13,7 @@
     z-index: 10; /* Z-index para sobrepor o conteúdo */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar o cabeçalho */
     width: 100%;
+    will-change: transform, opacity;
 }
 
 .header__content {
@@ -29,22 +27,35 @@
 
 /* Media Query para dispositivos menores */
 @media (max-width: 768px) {
+    .header {
+        padding: 5px 20px; /* Reduzir padding para diminuir a altura */
+    }
+
     .header__content {
-        flex-direction: column; /* Torna os itens empilhados em telas pequenas */
-        align-items: flex-start; /* Alinha à esquerda */
+        flex-direction: row; /* Mantém os itens em linha */
+        justify-content: space-between; /* Espaça os itens */
+        align-items: center; /* Alinha verticalmente */
     }
 }
 
 .header__logo {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: center; /* Alinha verticalmente */
 }
 
 .header__logo-img {
-    width: 160px;
-    max-width: 100%; /* Garante que a logo não ultrapasse o espaço disponível */
+    width: 140px;
+    max-width: 90%; /* Garante que a logo não ultrapasse o espaço disponível */
     height: auto;
-    margin-right: 10px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: auto; /* Empurra os itens para a direita */
 }
 
 .header__nav-list {
@@ -53,7 +64,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 2px;
 }
 
 .header__nav-item {
@@ -64,41 +75,105 @@
     color: rgba(56, 105, 46, 1);
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    will-change: transform, background-color;
+    padding: 12px 20px;
+    border-radius: 30px;
 }
 
 .header__nav-link:hover {
-    color: #ebf08c; /* Cor de destaque ao passar o mouse */
+    color: #38692E; /* Tom verde mais escuro */
+    background-color: #c8e6c9; /* Verde pastel um pouco mais intenso */
+    border-radius: 35px;
+    transform: scale(1.02); /* Aumenta um pouco menos */
+}
+
+.header__nav-link--login {
+    padding: 12px 36px;
+    background-color: #006eff88; /* Cor de fundo inicial */
+    color: #fff; /* Cor do texto inicial */
+}
+
+.header__nav-link--login:hover {
+    background-color: #006eff88; /* Cor de fundo ao passar o mouse */
+    color: #0042c78e; /* Cor do texto ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco mais */
+}
+
+.header__nav-link--register {
+    padding: 12px 36px;
+    background-color: #7fbf7f; /* Cor de fundo inicial */
+    color: #fff; /* Cor do texto inicial */
+}
+
+.header__nav-link--register:hover {
+    background-color: #7fbf7f; /* Cor de fundo ao passar o mouse */
+    color: #38692E; /* Cor do texto ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco mais */
+}
+
+.header__menu-toggle {
+    display: none; /* Esconde o botão hamburger por padrão */
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #38692E;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 0; /* Remove o ajuste superior */
 }
 
 /* Media Query para telas menores */
 @media (max-width: 768px) {
-    .header__nav-list {
-        gap: 15px; /* Diminui o espaço entre os links em telas menores */
+    .header {
+        padding: 5px 20px; /* Reduzir padding para diminuir a altura */
     }
-}
 
-/* Estilo do botão de Login */
-.header__nav-link--login {
-    background-color: #853A10;
-    border-color: #632807;
-    border:2px solid #632807;
-    color: #ffffff;
-    padding: 5px 40px;
-    border-radius: 4px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-}
+    .header__content {
+        flex-direction: row; /* Mantém os itens em linha */
+        justify-content: space-between; /* Espaça os itens */
+        align-items: center; /* Alinha verticalmente */
+    }
 
-.header__nav-link--login:hover {
-    background-color: #632807; /* Tom mais escuro quando passa o mouse */
-    transform: scale(1.05); /* Efeito de aumentar o botão */
-}
+    .header__nav {
+        display: none; /* Esconde o menu padrão */
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff; /* ou a cor de fundo do seu header */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header__nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
 
-/* Ajustando o tamanho do botão em telas menores */
-@media (max-width: 768px) {
-    .header__nav-link--login {
-        padding: 8px 30px; /* Reduz o padding em telas pequenas */
+    .header__nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__nav-link {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .header__nav--open {
+        display: flex; /* Mostra o menu quando aberto */
+    }
+
+    .header__menu-toggle {
+        display: flex; /* Mostra o botão hamburger em telas menores */
+    }
+
+    .header__nav-link--login, .header__nav-link--register {
+        padding: 12px 36px;
     }
 }

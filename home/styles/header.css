@@ -72,7 +72,7 @@
 }
 
 .header__nav-link {
-    color: rgba(56, 105, 46, 1);
+    color: #26601B;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
@@ -82,8 +82,8 @@
 }
 
 .header__nav-link:hover {
-    color: #38692E; /* Tom verde mais escuro */
-    background-color: #c8e6c9; /* Verde pastel um pouco mais intenso */
+    color: #26601B; /* Tom verde mais escuro */
+    background-color: #c8e6c9;
     border-radius: 35px;
     transform: scale(1.02); /* Aumenta um pouco menos */
 }
